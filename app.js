@@ -1,407 +1,290 @@
 /**
- * E-Cycle Hub (CircuitCycle) - Academic Portfolio & Evaluation Engine
- * University Course: E-Waste Management & Circular Economy (EWM-502)
+ * MY WORK — Academic Portfolio & Project Repository
+ * Student: Shubham Patel | Roll Number: 24102A0051 | Computer Engineering, CMPN-A
+ * Vidyalankar Institute of Technology, Mumbai
  */
 
-// Initial Seed Data for Academic E-Waste Assignments
-const INITIAL_ASSIGNMENTS = [
+// Four Live Applications
+const LIVE_APPLICATIONS = [
   {
-    id: "EWM-LAB-01",
-    title: "Comparative Analysis of Pyrometallurgical vs. Hydrometallurgical Extraction of Precious Metals from Printed Circuit Boards (PCBs)",
-    category: "Lab Work",
-    submissionDate: "2026-10-14",
-    formattedDate: "Oct 14, 2026",
-    score: 9.8,
-    grade: "A+",
-    status: "Evaluated", // "Evaluated", "Under Review", "Pending"
-    abstract: "Quantified leaching kinetics of Copper and Gold from crushed consumer electronics using mild organic acids versus traditional smelting. Demonstrated a 91.4% Au recovery efficiency with 40% reduced CO2 eq emissions in hydrometallurgical closed loops.",
-    tags: ["#Hydrometallurgy", "#UrbanMining", "#GoldRecovery", "#PCBRecycling"],
-    divertedWasteKg: 42.5,
-    plagiarismRate: "1.2% (IEEE CrossCheck Verified)",
-    fileMeta: {
-      name: "EWM_Lab01_Precious_Metal_Extraction.pdf",
-      size: "5.8 MB",
-      format: "PDF",
-      pages: 18,
-      checksum: "SHA256: 8f4b11c9...2026"
-    },
-    secondaryLinks: [
-      { label: "AAS Spectrometry Dataset", type: "dataset", icon: "database" },
-      { label: "Process Flowsheet (CAD)", type: "schematic", icon: "cpu" }
-    ],
-    feedback: {
-      evaluator: "Prof. Dr. Elena Vance",
-      evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-      evaluatorAvatar: "EV",
-      timestamp: "Oct 16, 2026 • 14:22",
-      remarks: "Outstanding stoichiometric calculations and safety hazard mitigation protocol for nitric-free leaching. The mass balance diagrams in Section 3 accurately reconcile residue loss against AAS measurements. Commendable experimental precision.",
-      rubric: {
-        methodology: 25.0,
-        analysis: 24.8,
-        environmental: 25.0,
-        documentation: 19.5,
-        total: 94.3
-      },
-      signature: "Cryptographically Verified by University Academic Ledger (Hash: #EWM-EV-8842-01)"
-    },
-    paperContent: {
-      institution: "Department of Environmental & Materials Engineering • Circular Systems Lab",
-      keywords: "E-waste, hydrometallurgy, PCB recycling, gold leaching, circular economy, urban mining",
-      sections: [
-        {
-          heading: "1. Theoretical Background & Problem Statement",
-          text: "Printed circuit boards (PCBs) contain up to 250 g/tonne of Gold (Au) and 130 kg/tonne of Copper (Cu)—concentrations exceeding primary ore grades by 20 to 50 times. Conventional pyrometallurgical smelting emits hazardous dioxins and polybrominated diphenyl ethers (PBDEs). This laboratory investigation evaluated organic leaching lixiviants as closed-loop alternatives."
-        },
-        {
-          heading: "2. Chemical Reaction Kinetics & Leaching Model",
-          text: "Dissolution kinetics were modeled using the shrinking core model. Leaching with thiosulfate-copper catalyst followed diffusion control: 2Au + 8S₂O₃²⁻ + O₂ + 2H₂O → 4[Au(S₂O₃)₂]³⁻ + 4OH⁻. Activation energy was determined to be Ea = 32.4 kJ/mol."
-        },
-        {
-          heading: "3. Experimental Results & Recovery Efficiency",
-          text: "Hydrometallurgical extraction yielded 91.4% Au recovery within 4 hours at 45°C. Life Cycle Assessment (LCA) showed an aggregate carbon footprint reduction of 41.2% compared to primary pyrometallurgical refining."
-        }
-      ]
-    }
+    id: "APP-01",
+    title: "Himachal Pradesh SDG Tracker & E-Waste Dashboard",
+    category: "Geospatial & Regulatory Dashboard",
+    badge: "Live Web App",
+    url: "https://himachalpradesh-sdg-tracker.lovable.app/",
+    description: "Interactive spatial and regulatory monitoring dashboard tracking e-waste metrics, authorized collection centers, and UN Sustainable Development Goal (SDG) alignment across Himachal Pradesh districts.",
+    tags: ["#HimachalPradesh", "#SDGTracker", "#EWM", "#GISMapping"],
+    associatedAssignment: "Assignment 01 & 04",
+    icon: "globe"
   },
   {
-    id: "EWM-CS-02",
-    title: "Reverse Logistics & Extended Producer Responsibility (EPR): A Quantitative Case Study on Smartphone Take-Back Frameworks in Metro Hubs",
-    category: "Case Studies",
-    submissionDate: "2026-10-22",
-    formattedDate: "Oct 22, 2026",
-    score: 9.2,
-    grade: "A",
-    status: "Evaluated",
-    abstract: "Investigated consumer retention inertia and deposit-refund incentives across 1,200 urban households. Formulated an optimized reverse supply chain routing algorithm that decreases collection logistics overhead by 23.6%.",
-    tags: ["#ReverseLogistics", "#EPRPolicy", "#CircularSupplyChain", "#ConsumerBehavior"],
-    divertedWasteKg: 28.0,
-    plagiarismRate: "2.4% (Turnitin Verified)",
-    fileMeta: {
-      name: "EWM_CaseStudy02_Reverse_Logistics_EPR.pdf",
-      size: "3.4 MB",
-      format: "PDF",
-      pages: 24,
-      checksum: "SHA256: a71e49b2...2026"
-    },
-    secondaryLinks: [
-      { label: "Routing Simulation Script", type: "code", icon: "code" },
-      { label: "Household Survey Raw Data", type: "dataset", icon: "database" }
-    ],
-    feedback: {
-      evaluator: "Prof. Dr. Elena Vance",
-      evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-      evaluatorAvatar: "EV",
-      timestamp: "Oct 25, 2026 • 11:05",
-      remarks: "Thorough GIS collection hub optimization. The comparative breakdown between informal scrap aggregators and authorized Producer Responsibility Organizations (PROs) provides actionable municipal policy recommendations.",
-      rubric: {
-        methodology: 23.0,
-        analysis: 24.0,
-        environmental: 23.5,
-        documentation: 18.5,
-        total: 89.0
-      },
-      signature: "Cryptographically Verified by University Academic Ledger (Hash: #EWM-EV-8842-02)"
-    },
-    paperContent: {
-      institution: "Center for Sustainable Supply Chains & Environmental Governance",
-      keywords: "Reverse logistics, EPR, deposit-refund scheme, informal sector, urban mining",
-      sections: [
-        {
-          heading: "1. Overview of Urban Collection Deficits",
-          text: "Over 78% of retired smartphones remain stored in residential homes due to data security concerns and lack of visible redemption value. This research analyzed the economic threshold required to incentivize active drop-off at designated municipal kiosks."
-        },
-        {
-          heading: "2. Heuristic Vehicle Routing for E-Waste Hubs",
-          text: "A genetic algorithm was formulated to optimize reverse collection runs across 48 micro-depots. Total fuel expenditure decreased by 23.6% while ensuring weekly pickup thresholds for hazardous lithium-ion pouch cells."
-        }
-      ]
-    }
+    id: "APP-02",
+    title: "E-Waste EPR Compliance & Target Calculator",
+    category: "Regulatory Tool & CPCB Compliance",
+    badge: "Live Calculator",
+    url: "https://rj42-coder.github.io/e-waste-epr-calculator/",
+    description: "Web application implementing the Central Pollution Control Board (CPCB) formula for calculating electronics manufacturers' Extended Producer Responsibility (EPR) targets, recycling quotas, and compliance credits under E-Waste Rules 2022.",
+    tags: ["#EPRCalculator", "#CPCB", "#ComplianceRules2022", "#WebTool"],
+    associatedAssignment: "Assignment 05",
+    icon: "calculator"
   },
   {
-    id: "EWM-RES-03",
-    title: "Lithium-Ion Battery Cathode Black Mass Beneficiation: Closed-Loop Hydrometallurgical Recovery of Cobalt, Nickel, and Lithium",
-    category: "Research Papers",
-    submissionDate: "2026-10-28",
-    formattedDate: "Oct 28, 2026",
-    score: 9.6,
-    grade: "A+",
-    status: "Evaluated",
-    abstract: "Formulated a selective precipitation and solvent extraction process for spent LiCoO2 and NMC622 cells. Achieved 94.8% cobalt purity suitable for precursor cathode active material (pCAM) resynthesis.",
-    tags: ["#BatteryRecycling", "#BlackMass", "#CobaltRecovery", "#CriticalMinerals"],
-    divertedWasteKg: 34.2,
-    plagiarismRate: "1.8% (IEEE CrossCheck Verified)",
-    fileMeta: {
-      name: "EWM_Research03_Cathode_BlackMass_Recovery.pdf",
-      size: "7.1 MB",
-      format: "PDF",
-      pages: 32,
-      checksum: "SHA256: c3b910fa...2026"
-    },
-    secondaryLinks: [
-      { label: "Solvent Extraction XRD Plots", type: "dataset", icon: "line-chart" },
-      { label: "Flowsheet Schematic", type: "schematic", icon: "file-text" }
-    ],
-    feedback: {
-      evaluator: "Prof. Dr. Elena Vance",
-      evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-      evaluatorAvatar: "EV",
-      timestamp: "Oct 30, 2026 • 16:40",
-      remarks: "Remarkable experimental depth on thermal pre-treatment vs acid leaching yields. The recycling efficiency curves are exemplary. Ready for submission to the Undergraduate Circular Materials Symposium.",
-      rubric: {
-        methodology: 24.5,
-        analysis: 24.5,
-        environmental: 24.0,
-        documentation: 19.0,
-        total: 92.0
-      },
-      signature: "Cryptographically Verified by University Academic Ledger (Hash: #EWM-EV-8842-03)"
-    },
-    paperContent: {
-      institution: "Advanced Battery Recycling Laboratory & Clean Tech Consortium",
-      keywords: "Lithium-ion, black mass, pCAM resynthesis, hydrometallurgy, cobalt recovery",
-      sections: [
-        {
-          heading: "1. The Critical Materials Crisis in Electrification",
-          text: "With EV battery demand surging, recycling spent cathode materials represents an urgent strategic imperative. Black mass recovered from shredded cells contains critical concentrations of Co, Ni, Mn, and Li."
-        },
-        {
-          heading: "2. Selective Acid Leaching & Solvometallurgy",
-          text: "Using 2.0 M sulfuric acid with 1.5 vol% H₂O₂ as a reducing agent at 70°C achieved >98% leaching efficiency for Co and Li within 90 minutes. Cyanex 272 solvent extraction yielded separation factors exceeding 1500 between Co and Ni."
-        }
-      ]
-    }
+    id: "APP-03",
+    title: "ChainGuard — DeFi Anomaly & Threat Detection",
+    category: "AI/ML & Blockchain Security",
+    badge: "Hackathon Prototype",
+    url: "https://github.com/Shubhiii92/ChainGuard",
+    description: "AI/ML-driven decentralized finance transaction anomaly detection engine built during SPIT 24-Hour Hackathon. Employs Random Forest and Isolation Forest to evaluate on-chain behavior and assign real-time risk scores on Sepolia testnet.",
+    tags: ["#DeFiSecurity", "#AnomalyDetection", "#Python", "#FastAPI", "#Web3"],
+    associatedAssignment: "Project Repository",
+    icon: "shield"
   },
   {
-    id: "EWM-TH-04",
-    title: "Comparative Regulatory Analysis: European WEEE 2.0 / RoHS Directives vs. Basel Convention Amendments on Transboundary E-Waste Traffic",
-    category: "Research Papers",
-    submissionDate: "2026-11-01",
-    formattedDate: "Nov 01, 2026",
-    score: 9.0,
-    grade: "A",
-    status: "Evaluated",
-    abstract: "Examined enforcement loopholes, illegal transboundary shipment interception rates, and hazardous chemical restrictions across OECD and non-OECD jurisdictions under the new Basel e-waste amendments.",
-    tags: ["#WEEEDirective", "#RoHS", "#BaselConvention", "#EnvironmentalLaw"],
-    divertedWasteKg: 0, // Regulatory thesis
-    plagiarismRate: "0.9% (Turnitin Verified)",
-    fileMeta: {
-      name: "EWM_Thesis04_WEEE_Basel_Comparative_Law.pdf",
-      size: "4.1 MB",
-      format: "PDF",
-      pages: 20,
-      checksum: "SHA256: 41d8e1d7...2026"
-    },
-    secondaryLinks: [
-      { label: "Comparative Legal Matrix (XLSX)", type: "matrix", icon: "table" }
-    ],
-    feedback: {
-      evaluator: "Prof. Dr. Elena Vance",
-      evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-      evaluatorAvatar: "EV",
-      timestamp: "Nov 03, 2026 • 09:15",
-      remarks: "Sharp statutory synthesis. The tabular comparison of threshold concentrations for lead, mercury, and PBDE flame retardants demonstrates deep regulatory comprehension.",
-      rubric: {
-        methodology: 22.5,
-        analysis: 23.0,
-        environmental: 24.5,
-        documentation: 18.5,
-        total: 88.5
-      },
-      signature: "Cryptographically Verified by University Academic Ledger (Hash: #EWM-EV-8842-04)"
-    },
-    paperContent: {
-      institution: "Institute for International Environmental Policy & Law",
-      keywords: "WEEE 2.0, RoHS, Basel Convention, hazardous waste shipments, regulatory compliance",
-      sections: [
-        {
-          heading: "1. International Regulatory Landscape",
-          text: "Despite international treaties, millions of tonnes of e-waste are misclassified as 'second-hand working electronics' to bypass hazardous waste export bans. This analysis traces the evolution of Annex II and VIII under the Basel Convention."
-        },
-        {
-          heading: "2. RoHS Restrictions & Material Substitution",
-          text: "Evaluated industrial adoption curves for lead-free solder alloys (SAC305) and non-halogenated flame retardants following tightened RoHS concentration thresholds of <0.1% by weight."
-        }
-      ]
-    }
-  },
-  {
-    id: "EWM-PRES-05",
-    title: "Circular Design for Disassembly: Modular Architecture and Fastener Standardization in Consumer Laptops",
-    category: "Presentations",
-    submissionDate: "2026-11-04",
-    formattedDate: "Nov 04, 2026",
-    score: 9.7,
-    grade: "A+",
-    status: "Evaluated",
-    abstract: "30-slide capstone seminar analyzing iFixit repairability scores against manual disassembly times. Proposed a magnetic-latch modular battery and uniform screw architecture cutting teardown times from 18 minutes to 90 seconds.",
-    tags: ["#DesignForDisassembly", "#ModularDesign", "#Repairability", "#EcoDesign"],
-    divertedWasteKg: 18.5,
-    plagiarismRate: "Original CAD & Teardowns",
-    fileMeta: {
-      name: "EWM_Pres05_Design_For_Disassembly_Modular.pptx",
-      size: "18.2 MB",
-      format: "PPTX",
-      pages: 30,
-      checksum: "SHA256: 7e221fbc...2026"
-    },
-    secondaryLinks: [
-      { label: "Seminar Video Stream", type: "media", icon: "video" },
-      { label: "Teardown Protocol Sheet", type: "document", icon: "file-text" }
-    ],
-    feedback: {
-      evaluator: "Prof. Dr. Elena Vance",
-      evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-      evaluatorAvatar: "EV",
-      timestamp: "Nov 05, 2026 • 15:30",
-      remarks: "Exceptional presentation delivery and physical teardown documentation. The engineering tolerances for modular sub-assemblies were well defended during the oral examination.",
-      rubric: {
-        methodology: 24.5,
-        analysis: 24.0,
-        environmental: 24.5,
-        documentation: 20.0,
-        total: 93.0
-      },
-      signature: "Cryptographically Verified by University Academic Ledger (Hash: #EWM-EV-8842-05)"
-    },
-    paperContent: {
-      institution: "Eco-Industrial Design & Sustainable Prototyping Workshop",
-      keywords: "Design for Disassembly, modular electronics, repairability, circular product design",
-      sections: [
-        {
-          heading: "1. The Barrier of Adhesive Encapsulation",
-          text: "Modern consumer portables heavily favor structural adhesive glues over mechanical fasteners, increasing battery teardown hazards and preventing automated component shredding."
-        },
-        {
-          heading: "2. The Modular Snap-Latching Solution",
-          text: "By implementing neodymium quick-release magnets and universal Phillips #0 screws, battery replacement cycle time drops from 18 minutes to 90 seconds, dramatically improving second-life refurbishment yields."
-        }
-      ]
-    }
-  },
-  {
-    id: "EWM-LAB-06",
-    title: "Life Cycle Assessment (LCA) and Toxic Leachate Potential of CRT Glass and Flame-Retardant (BFR) Plastics in Landfills",
-    category: "Lab Work",
-    submissionDate: "2026-11-08",
-    formattedDate: "Nov 08, 2026",
-    score: 9.3,
-    grade: "A",
-    status: "Under Review",
-    abstract: "Conducted TCLP (Toxicity Characteristic Leaching Procedure) on legacy leaded CRT funnel glass and brominated ABS computer casings. Modelled heavy metal soil migration and bioaccumulation risks using openLCA software.",
-    tags: ["#TCLPToxicity", "#LifeCycleAssessment", "#FlameRetardants", "#LandfillImpact"],
-    divertedWasteKg: 19.6,
-    plagiarismRate: "1.5% (Turnitin Verified)",
-    fileMeta: {
-      name: "EWM_Lab06_TCLP_LCA_Leachate_Report.pdf",
-      size: "4.9 MB",
-      format: "PDF",
-      pages: 22,
-      checksum: "SHA256: 310892ff...2026"
-    },
-    secondaryLinks: [
-      { label: "openLCA Characterization Factors", type: "dataset", icon: "database" },
-      { label: "ICP-OES Heavy Metal Readings", type: "table", icon: "table" }
-    ],
-    feedback: {
-      evaluator: "Prof. Dr. Elena Vance",
-      evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-      evaluatorAvatar: "EV",
-      timestamp: "Nov 08, 2026 • 18:45",
-      remarks: "Preliminary data look very rigorous. Awaiting co-examiner sign-off on the ICP-OES calibration curve before final score verification. Overall findings are methodologically sound.",
-      rubric: {
-        methodology: 23.5,
-        analysis: 23.5,
-        environmental: 24.0,
-        documentation: 18.5,
-        total: 89.5
-      },
-      signature: "Status: In Verification Queue (Awaiting Co-Assessor Sign-off)"
-    },
-    paperContent: {
-      institution: "Hazardous Materials Testing Facility & LCA Center",
-      keywords: "TCLP, CRT lead glass, brominated flame retardants, leachate modeling, landfill migration",
-      sections: [
-        {
-          heading: "1. Legacy E-Waste Hazards",
-          text: "Cathode Ray Tubes (CRTs) contain up to 1.5 kg of elemental lead per monitor. When co-disposed in non-hazardous municipal landfills, acid rain accelerates heavy metal elution into municipal groundwater tables."
-        },
-        {
-          heading: "2. Toxicity Characteristic Leaching Protocol (EPA 1311)",
-          text: "Leached concentrations of Pb exceeded 18.4 mg/L under acetic acid extraction (pH 4.93), surpassing regulatory thresholds of 5.0 mg/L by more than 3.6x. Demonstrated imperative for glass vitrification recycling."
-        }
-      ]
-    }
+    id: "APP-04",
+    title: "Kids Car Game — Interactive 2D Driving Simulator",
+    category: "Interactive Canvas & Game Dev",
+    badge: "Live Game App",
+    url: "https://shubhiii92.github.io/kids-car-game/",
+    description: "Responsive 2D browser-based canvas obstacle driving game featuring real-time collision detection, dynamic continuous animation loops via requestAnimationFrame, and cross-device keyboard/touch controls.",
+    tags: ["#HTML5Canvas", "#JavaScript", "#PhysicsLoops", "#InteractiveGame"],
+    associatedAssignment: "Interactive Application",
+    icon: "gamepad"
   }
 ];
 
-// Application State Management
-class DashboardApp {
+// Eleven Actual Coursework Assignments (Numbered 00 to 10)
+const ASSIGNMENTS_DATA = [
+  {
+    id: "Assignment 00",
+    code: "EWM-ASSGN-00",
+    title: "Course Insights & VIT Autonomous Curriculum Architecture",
+    category: "Academic Framework",
+    date: "July 2026",
+    deliverables: [
+      { name: "EWM_Assignment_0.pdf", type: "PDF Document", size: "349 KB", path: "assignments/EWM_Assignment_0.pdf", primary: true }
+    ],
+    summary: "Comprehensive breakdown of the Vidyalankar Institute of Technology (VIT) autonomous curriculum architecture across all 7 course buckets (BSC/ESC, PC, MDC, Skill Courses, HSSM, ELC). Formulates the pedagogical scope and learning outcomes for the Electronic Waste Management & Circular Economy course.",
+    keyTakeaways: [
+      "Analysis of 7 autonomous curriculum buckets and academic credit structure at VIT Mumbai.",
+      "Scope of E-Waste Management & Circular Economy as an essential interdisciplinary engineering course.",
+      "Exploration of environmental legislation and material lifecycle engineering within computer engineering."
+    ],
+    tags: ["#CourseInsights", "#VITCurriculum", "#AutonomousFramework", "#EWMIntro"],
+    author: "Shubham Patel (24102A0051)"
+  },
+  {
+    id: "Assignment 01",
+    code: "EWM-ASSGN-01",
+    title: "Himachal Pradesh E-Waste Performance & Policy Assessment (UN SDG Alignment)",
+    category: "State Policy Assessment",
+    date: "July 2026",
+    liveAppUrl: "https://himachalpradesh-sdg-tracker.lovable.app/",
+    deliverables: [
+      { name: "EWM_Assignment_1_partB.pdf", type: "PDF Report", size: "26 KB", path: "assignments/EWM_Assignment_1_partB.pdf", primary: true },
+      { name: "EWM_Assignment_1_partB.docx", type: "DOCX Report", size: "48 KB", path: "assignments/EWM_Assignment_1_partB.docx" },
+      { name: "EWM_Assignment_1_partC.xlsx", type: "Excel Scorecard Matrix", size: "40 KB", path: "assignments/EWM_Assignment_1_partC.xlsx" }
+    ],
+    summary: "Statewide performance evaluation of Himachal Pradesh's e-waste governance under E-Waste (Management) Rules, 2022 (MoEFCC/CPCB) and HPSPCB. Uses a 100-Point Scorecard benchmarking Himachal Pradesh at 67.3/100 ('GOOD' Band) with direct mapping to UN Sustainable Development Goals (SDG 11, 12, 13).",
+    keyTakeaways: [
+      "Quantified state e-waste score of 67.3 / 100 benchmarked across legal compliance, collection, and recycling.",
+      "UN Sustainable Development Goals (SDG) alignment focusing on responsible consumption and climate resilience.",
+      "Companion interactive live monitoring web dashboard deployed on Lovable platform."
+    ],
+    tags: ["#HimachalPradesh", "#StateAssessment", "#UNSDG", "#Scorecard", "#HPSPCB"],
+    author: "Shubham Patel (24102A0051) & Collaborative Academic Cohort"
+  },
+  {
+    id: "Assignment 02",
+    code: "EWM-ASSGN-02",
+    title: "E-Waste Lifecycle, Material Flows & Disassembly Flowchart",
+    category: "Lifecycle Engineering",
+    date: "August 2026",
+    deliverables: [
+      { name: "EWM_Assignment_2.pdf", type: "Infographic & Poster PDF", size: "417 KB", path: "assignments/EWM_Assignment_2.pdf", primary: true }
+    ],
+    summary: "Comprehensive technical diagram and material lifecycle flowchart mapping consumer electronics from manufacturing and consumption through reverse logistics, formal dismantling, hydrometallurgical refining, and hazard containment.",
+    keyTakeaways: [
+      "Detailed flowchart tracing components through mechanical sorting, shredding, and chemical leaching.",
+      "Identification of toxic hazard vectors (Lead, Mercury, Cadmium, Brominated Flame Retardants).",
+      "Comparative pathways between formal registered recyclers vs informal urban scrap aggregators."
+    ],
+    tags: ["#LifecycleAnalysis", "#Flowchart", "#MaterialStreams", "#HazardMitigation"],
+    author: "Shubham Patel (24102A0051)"
+  },
+  {
+    id: "Assignment 03",
+    code: "EWM-ASSGN-03",
+    title: "Himachal Pradesh E-Waste Generation, Infrastructure & Flow Deck",
+    category: "Infrastructure Analysis",
+    date: "August 2026",
+    deliverables: [
+      { name: "EWM_Assignment_3.pdf", type: "Presentation Deck (13 Slides)", size: "19.0 MB", path: "assignments/EWM_Assignment_3.pdf", primary: true }
+    ],
+    summary: "13-slide academic presentation deck examining Himachal Pradesh's e-waste volumes, geographic distribution across urban centers (Shimla, Solan, Dharamshala), collection logistical constraints in mountainous terrains, and state authorized recycling capacity.",
+    keyTakeaways: [
+      "Geographic mapping of e-waste collection bottlenecks across high-altitude and rural Himalayan terrains.",
+      "Evaluation of registered dismantling hubs in industrial corridors like Baddi-Barotiwala-Nalagarh.",
+      "Strategic policy roadmap for decentralized community collection kiosks and incentive take-backs."
+    ],
+    tags: ["#HimachalInfrastructure", "#SlideDeck", "#ReverseLogistics", "#TerrainLogistics"],
+    author: "Shubham Patel (24102A0051)"
+  },
+  {
+    id: "Assignment 04",
+    code: "EWM-ASSGN-04",
+    title: "Himachal Pradesh State Profile, Economic Engines & Recycler Directory",
+    category: "State Profile & Directory",
+    date: "August 2026",
+    deliverables: [
+      { name: "EWM_Assignment_4.pdf", type: "Comprehensive State Profile Report", size: "309 KB", path: "assignments/EWM_Assignment_4.pdf", primary: true }
+    ],
+    summary: "Detailed economic and industrial profile of Himachal Pradesh analyzing key economic engines (Baddi-Barotiwala-Nalagarh Pharma Hub, Apple Horticulture, Kath-Kuni architectural heritage, hydropower) and auditing authorized e-waste dismantling facilities.",
+    keyTakeaways: [
+      "In-depth analysis of the Baddi-Barotiwala-Nalagarh (BBN) industrial manufacturing belt and its electrical waste footprint.",
+      "Comprehensive directory of state-authorized e-waste collection centers, PROs, and registered dismantlers.",
+      "Intersection of industrial expansion with ecological preservation in sensitive Himalayan ecosystems."
+    ],
+    tags: ["#BBNIndustrialHub", "#RecyclerDirectory", "#PharmaBelt", "#StateEconomy"],
+    author: "Shubham Patel (24102A0051)"
+  },
+  {
+    id: "Assignment 05",
+    code: "EWM-ASSGN-05",
+    title: "Extended Producer Responsibility (EPR) Compliance Practices of Indian Manufacturers",
+    category: "Regulatory Compliance",
+    date: "September 2026",
+    liveAppUrl: "https://rj42-coder.github.io/e-waste-epr-calculator/",
+    deliverables: [
+      { name: "EWM_Assignment_5.pdf", type: "PDF Compliance Report", size: "12 KB", path: "assignments/EWM_Assignment_5.pdf", primary: true },
+      { name: "EWM_Assignment_5.docx", type: "DOCX Document", size: "33 KB", path: "assignments/EWM_Assignment_5.docx" }
+    ],
+    summary: "Critical review of Extended Producer Responsibility (EPR) compliance practices among major Indian electronics manufacturers under E-Waste (Management) Rules, 2022 (with Jan 2024 CPCB amendments). Supported by a live web calculator implementing official EPR formula quotas.",
+    keyTakeaways: [
+      "Investigation into manufacturer compliance on the centralized CPCB online EPR registration portal.",
+      "Analysis of recycling credit trade systems, end-of-life collection mandates, and verification audits.",
+      "Engineered an interactive live web calculator for computing EPR targets based on sales and lifespan."
+    ],
+    tags: ["#EPRCompliance", "#CPCBPortal", "#IndianManufacturers", "#EPRRules2022"],
+    author: "Shubham Patel (24102A0051) & Collaborative Academic Cohort"
+  },
+  {
+    id: "Assignment 06",
+    code: "EWM-ASSGN-06",
+    title: "Comparative Study of Global E-Waste Regulations: India, US, Australia, Russia & Japan",
+    category: "Global Regulatory Analysis",
+    date: "August 2026",
+    deliverables: [
+      { name: "EWM_Assignment_6_partA.pdf", type: "Part A: Regulatory Study PDF", size: "10 KB", path: "assignments/EWM_Assignment_6_partA.pdf", primary: true },
+      { name: "EWM_Assignment_6_partA.docx", type: "Part A: Word Report", size: "25 KB", path: "assignments/EWM_Assignment_6_partA.docx" },
+      { name: "EWM_Assignment_6_partB.pdf", type: "Part B: Visual Synthesis Deck", size: "14.3 MB", path: "assignments/EWM_Assignment_6_partB.pdf" }
+    ],
+    summary: "Cross-jurisdictional statutory analysis comparing India's centralized portal-driven EPR model against the state-by-state patchwork in the United States, Australia's National Television & Computer Recycling Scheme (NTCRS), Russia's environmental fee framework, and Japan's Home Appliance Recycling Law.",
+    keyTakeaways: [
+      "Comparative analysis of EPR enforcement mechanisms, financial liability, and collection targets across 5 nations.",
+      "Critique of US lack of federal EPR mandate vs. Japan's strict consumer-funded dual-law system.",
+      "Identification of global best practices adaptable to developing nations facing high informal sector presence."
+    ],
+    tags: ["#GlobalRegulations", "#ComparativeStudy", "#EPRPolicy", "#WEEE", "#JapanDualLaw"],
+    author: "Shubham Patel (24102A0051) & Collaborative Academic Cohort"
+  },
+  {
+    id: "Assignment 07",
+    code: "EWM-ASSGN-07",
+    title: "Public Awareness Campaign: Video PSA & Educational Infographic",
+    category: "Public Outreach & Media",
+    date: "September 2026",
+    deliverables: [
+      { name: "EWM_Assignment_7_partA.mp4", type: "Video Campaign MP4", size: "32.2 MB", path: "assignments/EWM_Assignment_7_partA.mp4", primary: true },
+      { name: "EWM_Assignment_7_partB.jpeg", type: "Infographic Poster Image", size: "415 KB", path: "assignments/EWM_Assignment_7_partB.jpeg" }
+    ],
+    summary: "Creative public awareness outreach campaign designed to address consumer retention inertia and improper household disposal of end-of-life electronics. Consists of a produced video PSA and high-impact educational visual infographic explaining urban mining and toxic leaching.",
+    keyTakeaways: [
+      "Production of video PSA highlighting urban mining benefits and dangers of informal burning.",
+      "High-contrast visual poster detailing hazardous household electronic components and local drop-off centers.",
+      "Behavioral nudge strategies to motivate consumer participation in formal take-back programs."
+    ],
+    tags: ["#PublicAwareness", "#VideoCampaign", "#Infographic", "#ConsumerEducation"],
+    author: "Shubham Patel (24102A0051)"
+  },
+  {
+    id: "Assignment 08",
+    code: "EWM-ASSGN-08",
+    title: "Finding Risky Capabilities in Open-Source AI Agents: A Lightweight Static Scanner & Empirical Review",
+    category: "Published Research Paper",
+    date: "October 2026",
+    deliverables: [
+      { name: "IEEE_Agent_Capability_Scanner_Paper_FINAL.pdf", type: "IEEE Format Research Paper", size: "148 KB", path: "assignments/IEEE_Agent_Capability_Scanner_Paper_FINAL.pdf", primary: true }
+    ],
+    summary: "Original IEEE-formatted peer research paper authored by Shubham Patel, Riya Jamsutkar, and Atharv Londhe (Vidyalankar Institute of Technology). Investigates risky tool execution, command execution, and network exfiltration capabilities across 10 open-source AI agent repositories using an automated static code scanner validated against manual auditing.",
+    keyTakeaways: [
+      "Published research addressing tool invocation risks, shell commands, and file exfiltration in autonomous AI agents.",
+      "Developed a Python AST static analyzer benchmarking precision, recall, and F1 scores against 60 manual ground-truth pairs.",
+      "Demonstrated that static analysis successfully flags 78% of unvetted capabilities before deployment."
+    ],
+    tags: ["#IEEEResearch", "#AIAgents", "#StaticAnalysis", "#SecurityScanner", "#VITResearch"],
+    author: "Shubham Patel (24102A0051), Riya Jamsutkar, Atharv Londhe"
+  },
+  {
+    id: "Assignment 09",
+    code: "EWM-ASSGN-09",
+    title: "International E-Waste Case Studies: 10 Comprehensive Country Analyses",
+    category: "International Case Studies",
+    date: "October 2026",
+    deliverables: [
+      { name: "EWM_Assignment_9_partB.pdf", type: "Full 80-Page Case Study Compendium", size: "1.4 MB", path: "assignments/EWM_Assignment_9_partB.pdf", primary: true },
+      { name: "EWM_Assignment_9_partA.pptx", type: "Case Studies Presentation Deck", size: "234 KB", path: "assignments/EWM_Assignment_9_partA.pptx" },
+      { name: "EWM_Assignment_9_partA.pdf", type: "Case Studies Slide Deck PDF", size: "13 KB", path: "assignments/EWM_Assignment_9_partA.pdf" }
+    ],
+    summary: "Extensive 80-page analytical compendium documenting 10 international e-waste management models worldwide. Features in-depth scrutiny of Japan's Home Appliance Recycling Law (achieving 84% AC recovery), Switzerland's SWICO/SENS pioneer prepaid fee model, Germany's ElektroG, South Korea's EPR quota systems, and emerging African urban mining hubs.",
+    keyTakeaways: [
+      "10 complete international case studies spanning Asia, Europe, North America, and developing regions.",
+      "Empirical metrics on collection rates, producer recycling fees, informal integration, and high-purity metal refining.",
+      "Actionable recommendations for municipal policy reforms in rapid urbanization centers."
+    ],
+    tags: ["#CaseStudies", "#80PageReport", "#JapanRecycling", "#SwicoEPR", "#GlobalPolicy"],
+    author: "Shubham Patel (24102A0051)"
+  },
+  {
+    id: "Assignment 10",
+    code: "EWM-ASSGN-10",
+    title: "Software Configuration, Risk Analysis & Network Security Architecture",
+    category: "Technical Report & Lab",
+    date: "October 2026",
+    deliverables: [
+      { name: "EWM_Assignment_10.pdf", type: "Comprehensive Technical Deliverable", size: "2.7 MB", path: "assignments/EWM_Assignment_10.pdf", primary: true }
+    ],
+    summary: "Advanced technical report evaluating software engineering configuration management, change control, Risk Mitigation, Monitoring and Management (RMMM) plans, and digital network security frameworks supporting mission-critical environmental and academic infrastructure.",
+    keyTakeaways: [
+      "Formulation of RMMM risk exposure metrics and software change control baselining procedures.",
+      "Integration of digital signatures, secure data integrity verification, and network security protocols.",
+      "Systematic architectural evaluation combining software engineering rigors with domain telemetry."
+    ],
+    tags: ["#SoftwareEngineering", "#RMMMPlan", "#RiskManagement", "#NetworkSecurity", "#CMPNA"],
+    author: "Shubham Patel (24102A0051)"
+  }
+];
+
+// Application Controller
+class PortfolioApp {
   constructor() {
-    this.storageKey = 'ecycle_hub_assignments_v1';
-    this.assignments = this.loadAssignments();
+    this.assignments = ASSIGNMENTS_DATA;
+    this.apps = LIVE_APPLICATIONS;
     this.currentCategory = 'All';
-    this.currentStatus = 'All';
-    this.currentSort = 'latest';
     this.searchQuery = '';
     this.currentViewMode = 'grid'; // 'grid' | 'table'
-    this.isEvaluatorMode = false;
-    this.activeModalAssignment = null;
 
     this.init();
   }
 
-  loadAssignments() {
-    try {
-      const stored = localStorage.getItem(this.storageKey);
-      if (stored) {
-        return JSON.parse(stored);
-      }
-    } catch (e) {
-      console.warn('LocalStorage error, using defaults', e);
-    }
-    return [...INITIAL_ASSIGNMENTS];
-  }
-
-  saveAssignments() {
-    try {
-      localStorage.setItem(this.storageKey, JSON.stringify(this.assignments));
-    } catch (e) {
-      console.error('Failed to save to localStorage', e);
-    }
-  }
-
   init() {
     this.bindEvents();
-    this.startClock();
-    this.render();
-  }
-
-  startClock() {
-    const updateTime = () => {
-      const clockEl = document.getElementById('live-system-clock');
-      if (clockEl) {
-        const now = new Date();
-        const dateStr = now.toLocaleDateString('en-US', {
-          weekday: 'short',
-          month: 'short',
-          day: 'numeric',
-          year: 'numeric'
-        });
-        const timeStr = now.toLocaleTimeString('en-US', {
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-          hour12: false
-        });
-        clockEl.textContent = `${dateStr} • ${timeStr} UTC+5:30`;
-      }
-    };
-    updateTime();
-    setInterval(updateTime, 1000);
+    this.renderLiveApps();
+    this.renderAssignments();
+    this.renderCounts();
   }
 
   bindEvents() {
-    // Search input
+    // Search input listener
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
@@ -410,7 +293,7 @@ class DashboardApp {
       });
     }
 
-    // Keyboard shortcut for search (⌘K or /)
+    // Keyboard shortcut for search
     window.addEventListener('keydown', (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
@@ -418,7 +301,7 @@ class DashboardApp {
       }
     });
 
-    // Category filter pills
+    // Category filter buttons
     document.querySelectorAll('[data-category-filter]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const cat = e.currentTarget.getAttribute('data-category-filter');
@@ -426,185 +309,48 @@ class DashboardApp {
       });
     });
 
-    // Status filter dropdown
-    const statusSelect = document.getElementById('filter-status-select');
-    if (statusSelect) {
-      statusSelect.addEventListener('change', (e) => {
-        this.currentStatus = e.target.value;
-        this.renderAssignments();
+    // View toggle: Grid vs Table
+    const btnGrid = document.getElementById('btn-view-grid');
+    const btnTable = document.getElementById('btn-view-table');
+    if (btnGrid && btnTable) {
+      btnGrid.addEventListener('click', () => this.setViewMode('grid'));
+      btnTable.addEventListener('click', () => this.setViewMode('table'));
+    }
+
+    // Modal close listener
+    const previewModal = document.getElementById('preview-modal');
+    const closeBtn = document.getElementById('btn-close-modal');
+    if (closeBtn && previewModal) {
+      closeBtn.addEventListener('click', () => previewModal.close());
+    }
+
+    // Close dialog on backdrop click
+    if (previewModal) {
+      previewModal.addEventListener('click', (e) => {
+        const rect = previewModal.getBoundingClientRect();
+        const inDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+                          rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!inDialog) previewModal.close();
       });
     }
 
-    // Sort dropdown
-    const sortSelect = document.getElementById('sort-select');
-    if (sortSelect) {
-      sortSelect.addEventListener('change', (e) => {
-        this.currentSort = e.target.value;
-        this.renderAssignments();
-      });
-    }
-
-    // View Mode Toggles (Grid vs Table)
-    const btnGridView = document.getElementById('btn-view-grid');
-    const btnTableView = document.getElementById('btn-view-table');
-    if (btnGridView && btnTableView) {
-      btnGridView.addEventListener('click', () => {
-        this.setViewMode('grid');
-      });
-      btnTableView.addEventListener('click', () => {
-        this.setViewMode('table');
-      });
-    }
-
-    // Evaluator Mode Toggle
-    const evalToggle = document.getElementById('evaluator-mode-toggle');
-    if (evalToggle) {
-      evalToggle.addEventListener('change', (e) => {
-        this.isEvaluatorMode = e.target.checked;
-        const banner = document.getElementById('evaluator-mode-banner');
-        if (banner) {
-          if (this.isEvaluatorMode) {
-            banner.classList.remove('hidden');
-          } else {
-            banner.classList.add('hidden');
-          }
-        }
-        this.renderAssignments();
-      });
-    }
-
-    // Upload Modal triggers
-    const openUploadBtn = document.getElementById('btn-open-upload');
-    const uploadModal = document.getElementById('upload-modal');
-    const closeUploadBtn = document.getElementById('btn-close-upload');
-    const uploadForm = document.getElementById('upload-assignment-form');
-
-    if (openUploadBtn && uploadModal) {
-      openUploadBtn.addEventListener('click', () => {
-        uploadModal.showModal();
-      });
-    }
-
-    if (closeUploadBtn && uploadModal) {
-      closeUploadBtn.addEventListener('click', () => {
-        uploadModal.close();
-      });
-    }
-
-    // Close on backdrop click for dialogs
-    document.querySelectorAll('dialog').forEach(diag => {
-      diag.addEventListener('click', (e) => {
-        const rect = diag.getBoundingClientRect();
-        const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height
-          && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-        if (!isInDialog) {
-          diag.close();
-        }
-      });
-    });
-
-    // File Drag & Drop on Upload Modal
-    const dropZone = document.getElementById('file-drop-zone');
-    const fileInput = document.getElementById('file-input');
-    const fileSelectedLabel = document.getElementById('file-selected-name');
-
-    if (dropZone && fileInput) {
-      dropZone.addEventListener('click', () => fileInput.click());
-
-      ['dragenter', 'dragover'].forEach(eventName => {
-        dropZone.addEventListener(eventName, (e) => {
-          e.preventDefault();
-          dropZone.classList.add('drag-over');
-        });
-      });
-
-      ['dragleave', 'drop'].forEach(eventName => {
-        dropZone.addEventListener(eventName, (e) => {
-          e.preventDefault();
-          dropZone.classList.remove('drag-over');
-        });
-      });
-
-      dropZone.addEventListener('drop', (e) => {
-        if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-          fileInput.files = e.dataTransfer.files;
-          updateFileName(fileInput.files[0]);
-        }
-      });
-
-      fileInput.addEventListener('change', () => {
-        if (fileInput.files && fileInput.files[0]) {
-          updateFileName(fileInput.files[0]);
-        }
-      });
-
-      const updateFileName = (file) => {
-        if (fileSelectedLabel) {
-          const mb = (file.size / (1024 * 1024)).toFixed(1);
-          fileSelectedLabel.innerHTML = `<span class="text-emerald-400 font-medium">Selected:</span> ${file.name} (${mb} MB)`;
-          fileSelectedLabel.classList.remove('hidden');
-        }
-      };
-    }
-
-    // Form submission
-    if (uploadForm) {
-      uploadForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        this.handleUploadSubmit(e);
-      });
-    }
-
-    // Reset Data button
-    const resetDataBtn = document.getElementById('btn-reset-data');
-    if (resetDataBtn) {
-      resetDataBtn.addEventListener('click', () => {
-        if (confirm('Reset portfolio back to default course assignments? Any newly added submissions will be cleared.')) {
-          this.assignments = JSON.parse(JSON.stringify(INITIAL_ASSIGNMENTS));
-          this.saveAssignments();
-          this.render();
-        }
-      });
-    }
-
-    // Document Preview Modal Close
-    const docModal = document.getElementById('document-preview-modal');
-    const closeDocBtn = document.getElementById('btn-close-doc-modal');
-    if (closeDocBtn && docModal) {
-      closeDocBtn.addEventListener('click', () => docModal.close());
-    }
-
-    // Print / Download Portfolio button
+    // Print button
     const printBtn = document.getElementById('btn-print-portfolio');
     if (printBtn) {
-      printBtn.addEventListener('click', () => {
-        window.print();
-      });
-    }
-
-    // Material Impact Calculator inputs
-    const numLaptops = document.getElementById('calc-laptops');
-    const numPhones = document.getElementById('calc-phones');
-    const numServers = document.getElementById('calc-servers');
-    if (numLaptops && numPhones && numServers) {
-      const updateImpact = () => this.calculateMaterialImpact();
-      numLaptops.addEventListener('input', updateImpact);
-      numPhones.addEventListener('input', updateImpact);
-      numServers.addEventListener('input', updateImpact);
-      updateImpact();
+      printBtn.addEventListener('click', () => window.print());
     }
   }
 
   setCategory(cat) {
     this.currentCategory = cat;
     document.querySelectorAll('[data-category-filter]').forEach(btn => {
-      const active = btn.getAttribute('data-category-filter') === cat;
-      if (active) {
+      const match = btn.getAttribute('data-category-filter') === cat;
+      if (match) {
         btn.classList.add('bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/50');
-        btn.classList.remove('text-gray-400', 'border-white/10', 'hover:border-white/20');
+        btn.classList.remove('text-gray-400', 'border-white/10');
       } else {
         btn.classList.remove('bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/50');
-        btn.classList.add('text-gray-400', 'border-white/10', 'hover:border-white/20');
+        btn.classList.add('text-gray-400', 'border-white/10');
       }
     });
     this.renderAssignments();
@@ -634,105 +380,19 @@ class DashboardApp {
     }
   }
 
-  getFilteredAssignments() {
-    return this.assignments.filter(item => {
-      // Category filter
-      if (this.currentCategory !== 'All' && item.category !== this.currentCategory) {
-        return false;
-      }
-      // Status filter
-      if (this.currentStatus !== 'All' && item.status !== this.currentStatus) {
-        return false;
-      }
-      // Search filter
-      if (this.searchQuery) {
-        const q = this.searchQuery;
-        const matchesTitle = item.title.toLowerCase().includes(q);
-        const matchesId = item.id.toLowerCase().includes(q);
-        const matchesAbstract = item.abstract.toLowerCase().includes(q);
-        const matchesTags = item.tags.some(t => t.toLowerCase().includes(q));
-        const matchesEvaluator = item.feedback.remarks.toLowerCase().includes(q);
-        return matchesTitle || matchesId || matchesAbstract || matchesTags || matchesEvaluator;
-      }
-      return true;
-    }).sort((a, b) => {
-      if (this.currentSort === 'latest') {
-        return new Date(b.submissionDate) - new Date(a.submissionDate);
-      } else if (this.currentSort === 'oldest') {
-        return new Date(a.submissionDate) - new Date(b.submissionDate);
-      } else if (this.currentSort === 'score') {
-        return (b.score || 0) - (a.score || 0);
-      } else if (this.currentSort === 'code') {
-        return a.id.localeCompare(b.id);
-      }
-      return 0;
-    });
-  }
+  renderCounts() {
+    const totalEl = document.getElementById('count-total-assignments');
+    if (totalEl) totalEl.textContent = this.assignments.length;
 
-  render() {
-    this.renderKPIs();
-    this.renderAssignments();
-    this.updateCategoryCounts();
-  }
+    const totalAppsEl = document.getElementById('count-total-apps');
+    if (totalAppsEl) totalAppsEl.textContent = this.apps.length;
 
-  renderKPIs() {
-    const total = this.assignments.length;
-    const evaluated = this.assignments.filter(a => a.status === 'Evaluated').length;
-    const underReview = this.assignments.filter(a => a.status === 'Under Review').length;
-    const pending = this.assignments.filter(a => a.status === 'Pending').length;
-
-    // Calculate total diverted waste
-    const totalWasteKg = this.assignments.reduce((acc, curr) => acc + (curr.divertedWasteKg || 0), 0);
-
-    // Calculate average score of evaluated assignments
-    const evaluatedItems = this.assignments.filter(a => a.score && a.status === 'Evaluated');
-    const avgScore = evaluatedItems.length > 0 
-      ? (evaluatedItems.reduce((acc, c) => acc + c.score, 0) / evaluatedItems.length).toFixed(1)
-      : '9.4';
-
-    // Update KPI UI elements
-    const kpiTotalEl = document.getElementById('kpi-total-submissions');
-    if (kpiTotalEl) kpiTotalEl.textContent = `${total}`;
-
-    const kpiAvgScoreEl = document.getElementById('kpi-avg-score');
-    if (kpiAvgScoreEl) kpiAvgScoreEl.textContent = `${avgScore} / 10`;
-
-    const kpiWasteEl = document.getElementById('kpi-waste-diverted');
-    if (kpiWasteEl) kpiWasteEl.textContent = `${totalWasteKg.toFixed(1)} kg`;
-
-    const kpiReviewStatusEl = document.getElementById('kpi-review-status');
-    if (kpiReviewStatusEl) {
-      kpiReviewStatusEl.textContent = `${evaluated} Verified • ${underReview + pending} In Queue`;
-    }
-
-    // Update Banner Meta Badges
-    const badgeSubmitted = document.getElementById('banner-badge-submitted');
-    if (badgeSubmitted) badgeSubmitted.textContent = `${total} / 6 Core Modules`;
-
-    const badgeWaste = document.getElementById('banner-badge-waste');
-    if (badgeWaste) badgeWaste.textContent = `${totalWasteKg.toFixed(1)} kg e-Waste Analyzed`;
-
-    // Circular progress ring calculation (100% completion if >= 6)
-    const progressPercent = Math.min(100, Math.round((total / 6) * 100));
-    const circle = document.getElementById('kpi-progress-circle');
-    const text = document.getElementById('kpi-progress-text');
-    if (circle && text) {
-      const radius = 32;
-      const circumference = 2 * Math.PI * radius;
-      const offset = circumference - (progressPercent / 100) * circumference;
-      circle.style.strokeDasharray = `${circumference} ${circumference}`;
-      circle.style.strokeDashoffset = offset;
-      text.textContent = `${progressPercent}%`;
-    }
-  }
-
-  updateCategoryCounts() {
     const counts = {
       All: this.assignments.length,
-      "Research Papers": this.assignments.filter(a => a.category === 'Research Papers').length,
-      "Case Studies": this.assignments.filter(a => a.category === 'Case Studies').length,
-      "Lab Work": this.assignments.filter(a => a.category === 'Lab Work').length,
-      "Presentations": this.assignments.filter(a => a.category === 'Presentations').length
+      "Policy & Regulatory": this.assignments.filter(a => a.category.includes('Policy') || a.category.includes('Regulatory')).length,
+      "Research & Reports": this.assignments.filter(a => a.category.includes('Research') || a.category.includes('Framework') || a.category.includes('Technical')).length,
+      "Presentations & Case Studies": this.assignments.filter(a => a.category.includes('Presentation') || a.category.includes('Case Studies') || a.category.includes('Infrastructure')).length,
+      "Outreach & Media": this.assignments.filter(a => a.category.includes('Outreach') || a.category.includes('Media') || a.category.includes('Lifecycle')).length
     };
 
     document.querySelectorAll('[data-category-count]').forEach(el => {
@@ -743,11 +403,86 @@ class DashboardApp {
     });
   }
 
+  getFilteredAssignments() {
+    return this.assignments.filter(item => {
+      if (this.currentCategory !== 'All') {
+        if (this.currentCategory === 'Policy & Regulatory') {
+          if (!item.category.includes('Policy') && !item.category.includes('Regulatory')) return false;
+        } else if (this.currentCategory === 'Research & Reports') {
+          if (!item.category.includes('Research') && !item.category.includes('Framework') && !item.category.includes('Technical') && !item.category.includes('State Profile')) return false;
+        } else if (this.currentCategory === 'Presentations & Case Studies') {
+          if (!item.category.includes('Presentation') && !item.category.includes('Case Studies') && !item.category.includes('Infrastructure')) return false;
+        } else if (this.currentCategory === 'Outreach & Media') {
+          if (!item.category.includes('Outreach') && !item.category.includes('Media') && !item.category.includes('Lifecycle')) return false;
+        }
+      }
+
+      if (this.searchQuery) {
+        const q = this.searchQuery;
+        const matchesTitle = item.title.toLowerCase().includes(q);
+        const matchesId = item.id.toLowerCase().includes(q) || item.code.toLowerCase().includes(q);
+        const matchesSummary = item.summary.toLowerCase().includes(q);
+        const matchesTags = item.tags.some(t => t.toLowerCase().includes(q));
+        return matchesTitle || matchesId || matchesSummary || matchesTags;
+      }
+
+      return true;
+    });
+  }
+
+  renderLiveApps() {
+    const container = document.getElementById('live-apps-container');
+    if (!container) return;
+
+    container.innerHTML = this.apps.map(app => `
+      <div class="glass-card rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between group border border-white/10 hover:border-sky-500/40">
+        <div>
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/30 text-sky-300 font-semibold">
+              ${app.id}
+            </span>
+            <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 live-pulse"></span>
+              ${app.badge}
+            </span>
+          </div>
+
+          <h3 class="text-lg font-bold text-white mb-2 font-display group-hover:text-sky-300 transition-colors">
+            ${app.title}
+          </h3>
+
+          <p class="text-gray-300 text-xs leading-relaxed mb-4">
+            ${app.description}
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            ${app.tags.map(t => `<span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/5 text-gray-400 border border-white/5">${t}</span>`).join('')}
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+          <span class="text-[11px] font-mono text-gray-500">${app.associatedAssignment}</span>
+          <a 
+            href="${app.url}" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 text-xs font-semibold transition-all"
+          >
+            <span>Launch Live App</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    `).join('');
+  }
+
   renderAssignments() {
     const items = this.getFilteredAssignments();
-    const countBadge = document.getElementById('results-count-badge');
-    if (countBadge) {
-      countBadge.textContent = `Showing ${items.length} of ${this.assignments.length} assignments`;
+    const badge = document.getElementById('results-count-badge');
+    if (badge) {
+      badge.textContent = `Displaying ${items.length} of ${this.assignments.length} Coursework Assignments`;
     }
 
     this.renderGridView(items);
@@ -755,22 +490,15 @@ class DashboardApp {
   }
 
   renderGridView(items) {
-    const gridContainer = document.getElementById('assignment-grid-view');
-    if (!gridContainer) return;
+    const container = document.getElementById('assignment-grid-view');
+    if (!container) return;
 
     if (items.length === 0) {
-      gridContainer.innerHTML = `
-        <div class="col-span-full glass-panel rounded-2xl p-12 text-center border border-white/10 my-6">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2 font-display">No matching assignments found</h3>
-          <p class="text-gray-400 max-w-md mx-auto mb-6 text-sm">
-            Try adjusting your search terms or clearing current filter categories to view other course submissions.
-          </p>
-          <button onclick="window.app.resetFilters()" class="px-5 py-2.5 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-sm font-medium hover:bg-emerald-500/30 transition-colors">
+      container.innerHTML = `
+        <div class="col-span-full glass-panel rounded-2xl p-12 text-center border border-white/10 my-4">
+          <h3 class="text-lg font-bold text-white mb-2 font-display">No matching assignments found</h3>
+          <p class="text-gray-400 text-xs mb-4">Try searching for other terms or reset the category filter.</p>
+          <button onclick="window.app.setCategory('All')" class="px-4 py-2 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-medium">
             Reset Filters
           </button>
         </div>
@@ -778,701 +506,267 @@ class DashboardApp {
       return;
     }
 
-    gridContainer.innerHTML = items.map(item => this.buildCardHtml(item)).join('');
-
-    // Attach event listeners to card triggers
-    this.bindCardEventListeners(gridContainer);
-  }
-
-  buildCardHtml(item) {
-    const statusConfig = {
-      "Evaluated": {
-        color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
-        dot: "bg-emerald-400 live-pulse",
-        text: "Evaluated"
-      },
-      "Under Review": {
-        color: "text-amber-400 bg-amber-500/10 border-amber-500/30",
-        dot: "bg-amber-400 live-pulse-amber",
-        text: "Under Review"
-      },
-      "Pending": {
-        color: "text-sky-400 bg-sky-500/10 border-sky-500/30",
-        dot: "bg-sky-400",
-        text: "Pending Assessor"
-      }
-    };
-
-    const statusObj = statusConfig[item.status] || statusConfig["Evaluated"];
-
-    const categoryBadges = {
-      "Lab Work": "text-emerald-300 bg-emerald-950/60 border-emerald-600/40",
-      "Research Papers": "text-cyan-300 bg-cyan-950/60 border-cyan-600/40",
-      "Case Studies": "text-purple-300 bg-purple-950/60 border-purple-600/40",
-      "Presentations": "text-amber-300 bg-amber-950/60 border-amber-600/40"
-    };
-
-    const catBadgeClass = categoryBadges[item.category] || "text-gray-300 bg-gray-800/80 border-gray-600/40";
-
-    return `
-      <article class="glass-card rounded-2xl p-6 relative flex flex-col justify-between group overflow-hidden" data-assignment-id="${item.id}">
-        <!-- Top Metadata Header -->
+    container.innerHTML = items.map(item => `
+      <article class="glass-card rounded-2xl p-6 relative flex flex-col justify-between group overflow-hidden border border-white/10">
         <div>
-          <div class="flex items-center justify-between gap-3 mb-4 flex-wrap">
+          <!-- Header Code & Category -->
+          <div class="flex items-center justify-between gap-3 mb-3 flex-wrap">
             <div class="flex items-center gap-2">
-              <span class="font-mono-code text-xs px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-gray-300 font-semibold tracking-wider">
+              <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-emerald-400 font-bold">
                 ${item.id}
               </span>
-              <span class="text-xs px-2.5 py-1 rounded-md border font-medium ${catBadgeClass}">
-                ${item.category}
+              <span class="font-mono text-[11px] px-2 py-0.5 rounded bg-white/5 border border-white/5 text-gray-400">
+                ${item.code}
               </span>
             </div>
-            
-            <div class="flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full border font-medium ${statusObj.color}">
-                <span class="w-1.5 h-1.5 rounded-full ${statusObj.dot}"></span>
-                ${statusObj.text}
-              </span>
-            </div>
-          </div>
-
-          <!-- Title -->
-          <h3 class="text-lg font-bold text-white mb-2.5 leading-snug font-display group-hover:text-emerald-300 transition-colors">
-            ${item.title}
-          </h3>
-
-          <!-- Executive Summary -->
-          <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
-            ${item.abstract}
-          </p>
-
-          <!-- Tags -->
-          <div class="flex flex-wrap gap-1.5 mb-5">
-            ${item.tags.map(tag => `
-              <button onclick="window.app.filterByTag('${tag}')" class="text-[11px] font-mono-code px-2 py-0.5 rounded bg-white/5 hover:bg-emerald-500/20 text-gray-400 hover:text-emerald-300 transition-colors border border-white/5">
-                ${tag}
-              </button>
-            `).join('')}
-          </div>
-
-          <!-- Academic Metrics & Verification -->
-          <div class="grid grid-cols-2 gap-2 mb-5 p-3 rounded-xl bg-black/30 border border-white/5 text-xs font-mono-code">
-            <div>
-              <span class="text-gray-500 block text-[10px] uppercase tracking-wider">Diverted / Analyzed</span>
-              <span class="text-emerald-400 font-semibold">${item.divertedWasteKg > 0 ? item.divertedWasteKg + ' kg e-Waste' : 'Policy Framework'}</span>
-            </div>
-            <div>
-              <span class="text-gray-500 block text-[10px] uppercase tracking-wider">Integrity Audit</span>
-              <span class="text-gray-300 truncate block">${item.plagiarismRate.split(' ')[0]}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card Footer & Action Buttons -->
-        <div>
-          <!-- File Asset Row -->
-          <div class="flex items-center justify-between pt-4 border-t border-white/10 mb-4 text-xs text-gray-400">
-            <div class="flex items-center gap-2">
-              <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </span>
-              <div>
-                <span class="text-gray-200 font-medium block truncate max-w-[150px] sm:max-w-[180px]">${item.fileMeta.name}</span>
-                <span class="text-[11px] text-gray-500 font-mono-code">${item.fileMeta.format} • ${item.fileMeta.size}</span>
-              </div>
-            </div>
-
-            <span class="text-gray-500 font-mono-code text-[11px]">
-              ${item.formattedDate}
+            <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-950/60 border border-emerald-600/30 text-emerald-300 font-medium">
+              ${item.category}
             </span>
           </div>
 
-          <!-- Primary Actions -->
-          <div class="flex items-center gap-2 mb-3">
-            <button data-action="preview" data-id="${item.id}" class="flex-1 py-2 px-3 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-medium text-xs flex items-center justify-center gap-1.5 transition-all">
+          <!-- Assignment Title -->
+          <h3 class="text-lg font-bold text-white mb-3 font-display leading-snug group-hover:text-emerald-300 transition-colors">
+            ${item.title}
+          </h3>
+
+          <!-- Summary -->
+          <p class="text-gray-300 text-xs leading-relaxed mb-4">
+            ${item.summary}
+          </p>
+
+          <!-- Key Takeaways Bullet List -->
+          <div class="mb-4 bg-black/30 p-3 rounded-xl border border-white/5 text-xs text-gray-300 space-y-1.5">
+            <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider block mb-1">Deliverable Highlights</span>
+            ${item.keyTakeaways.map(k => `
+              <div class="flex items-start gap-1.5 text-[11px]">
+                <span class="text-emerald-400 font-bold mt-0.5">•</span>
+                <span>${k}</span>
+              </div>
+            `).join('')}
+          </div>
+
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-1.5 mb-5">
+            ${item.tags.map(t => `<span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/5 text-gray-400 border border-white/5">${t}</span>`).join('')}
+          </div>
+        </div>
+
+        <div>
+          <!-- Deliverable Asset List -->
+          <div class="pt-4 border-t border-white/10 mb-4 space-y-2">
+            <span class="text-[10px] font-mono text-gray-400 uppercase tracking-wider block">Actual Course Deliverables:</span>
+            ${item.deliverables.map(d => `
+              <div class="flex items-center justify-between p-2 rounded-lg bg-white/[0.03] border border-white/5 text-xs">
+                <div class="flex items-center gap-2 truncate pr-2">
+                  <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  <span class="text-white font-medium truncate">${d.name}</span>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-[10px] font-mono text-gray-500">${d.size}</span>
+                  <a 
+                    href="${d.path}" 
+                    target="_blank" 
+                    download
+                    class="p-1 rounded bg-white/5 hover:bg-emerald-500/20 text-gray-400 hover:text-emerald-300 transition-colors"
+                    title="Download file directly"
+                  >
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-2">
+            <button 
+              onclick="window.app.openPreview('${item.id}')"
+              class="flex-1 py-2 px-3 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-semibold text-xs flex items-center justify-center gap-1.5 transition-all"
+            >
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
               </svg>
-              Read / Preview
+              <span>Inspect Details</span>
             </button>
 
-            <button data-action="download" data-id="${item.id}" class="py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-gray-300 hover:text-white text-xs font-medium flex items-center gap-1.5 transition-all" title="Download Document">
-              <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-              </svg>
-              <span>Download</span>
-            </button>
-          </div>
-
-          <!-- Evaluator Feedback Accordion Trigger -->
-          <div class="rounded-xl border border-white/10 bg-black/25 overflow-hidden">
-            <button data-action="toggle-feedback" data-id="${item.id}" class="w-full py-2.5 px-3 flex items-center justify-between text-xs font-medium text-gray-300 hover:text-emerald-300 transition-colors">
-              <span class="flex items-center gap-1.5">
-                <span class="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-[10px] font-bold">
-                  ✓
-                </span>
-                <span>Evaluator Feedback & Rubric</span>
-                <span class="font-mono-code text-emerald-400 font-bold ml-1">${item.score}/10</span>
-              </span>
-              <svg class="w-4 h-4 text-gray-400 transition-transform feedback-chevron-${item.id}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-
-            <!-- Collapsible Feedback Body -->
-            <div id="feedback-panel-${item.id}" class="hidden p-3 border-t border-white/5 bg-black/40 text-xs">
-              <div class="flex items-start gap-2.5 mb-2.5">
-                <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0 border border-emerald-500/30">
-                  ${item.feedback.evaluatorAvatar}
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-white font-semibold">${item.feedback.evaluator}</span>
-                    <span class="text-[10px] text-gray-400">${item.feedback.timestamp}</span>
-                  </div>
-                  <span class="text-[10px] text-emerald-400 block">${item.feedback.evaluatorTitle}</span>
-                </div>
-              </div>
-
-              <p class="text-gray-300 italic mb-3 text-[11px] leading-relaxed bg-white/5 p-2.5 rounded-lg border border-white/5">
-                "${item.feedback.remarks}"
-              </p>
-
-              <!-- Rubric scores breakdown -->
-              <div class="grid grid-cols-2 gap-2 text-[10px] font-mono-code mb-2 text-gray-400">
-                <div class="flex justify-between">
-                  <span>Methodology:</span>
-                  <span class="text-emerald-400 font-semibold">${item.feedback.rubric.methodology}/25</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Data Analysis:</span>
-                  <span class="text-emerald-400 font-semibold">${item.feedback.rubric.analysis}/25</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Eco Relevance:</span>
-                  <span class="text-emerald-400 font-semibold">${item.feedback.rubric.environmental}/25</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Doc Quality:</span>
-                  <span class="text-emerald-400 font-semibold">${item.feedback.rubric.documentation}/20</span>
-                </div>
-              </div>
-
-              <!-- Cryptographic Signature Verification -->
-              <div class="pt-2 border-t border-white/5 text-[9px] font-mono-code text-gray-500 truncate flex items-center gap-1">
-                <svg class="w-3 h-3 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            ${item.liveAppUrl ? `
+              <a 
+                href="${item.liveAppUrl}" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="py-2 px-3 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-500/30 text-sky-300 font-semibold text-xs flex items-center gap-1.5 transition-all"
+                title="Launch Associated Live Application"
+              >
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
-                <span class="truncate">${item.feedback.signature}</span>
-              </div>
-
-              ${this.isEvaluatorMode ? `
-                <div class="mt-3 pt-2 border-t border-emerald-500/20 flex gap-2">
-                  <button onclick="window.app.openEditGradeModal('${item.id}')" class="w-full py-1.5 px-2 rounded-lg bg-emerald-500 text-black font-semibold text-[11px] hover:bg-emerald-400 transition-colors">
-                    Edit Assessor Grade / Feedback
-                  </button>
-                </div>
-              ` : ''}
-            </div>
+                <span>Live App</span>
+              </a>
+            ` : ''}
           </div>
         </div>
       </article>
-    `;
+    `).join('');
   }
 
   renderTableView(items) {
-    const tableBody = document.getElementById('assignment-table-body');
-    if (!tableBody) return;
+    const tbody = document.getElementById('assignment-table-body');
+    if (!tbody) return;
 
-    tableBody.innerHTML = items.map(item => `
-      <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors text-xs font-mono-code">
-        <td class="p-4">
-          <span class="px-2 py-1 rounded bg-white/5 text-gray-300 font-bold border border-white/10">
-            ${item.id}
-          </span>
-        </td>
-        <td class="p-4 font-sans font-medium text-white max-w-xs">
-          <div class="font-bold text-sm text-white mb-1 hover:text-emerald-400 cursor-pointer" onclick="window.app.openDocumentPreview('${item.id}')">
+    tbody.innerHTML = items.map(item => `
+      <tr class="border-b border-white/5 hover:bg-white/[0.02] text-xs font-mono transition-colors">
+        <td class="p-4 text-emerald-400 font-bold">${item.id}</td>
+        <td class="p-4 font-sans font-medium text-white max-w-sm">
+          <div class="font-bold text-sm text-white hover:text-emerald-300 cursor-pointer mb-1" onclick="window.app.openPreview('${item.id}')">
             ${item.title}
           </div>
-          <div class="text-gray-400 text-xs line-clamp-1">${item.abstract}</div>
+          <div class="text-gray-400 text-xs line-clamp-1">${item.summary}</div>
         </td>
         <td class="p-4">
-          <span class="px-2.5 py-1 rounded-md text-[11px] font-sans font-medium bg-white/5 border border-white/10 text-gray-300">
+          <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-gray-300 text-[11px] font-sans">
             ${item.category}
           </span>
         </td>
-        <td class="p-4 text-gray-400">
-          ${item.formattedDate}
-        </td>
-        <td class="p-4 text-center">
-          <span class="text-emerald-400 font-bold text-sm">${item.score}/10</span>
-          <span class="text-gray-500 text-[10px] block font-sans">${item.grade}</span>
-        </td>
         <td class="p-4">
-          <span class="inline-flex items-center gap-1 text-[11px] font-sans px-2.5 py-1 rounded-full border ${item.status === 'Evaluated' ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30' : 'text-amber-400 bg-amber-500/10 border-amber-500/30'}">
-            <span class="w-1.5 h-1.5 rounded-full ${item.status === 'Evaluated' ? 'bg-emerald-400' : 'bg-amber-400'}"></span>
-            ${item.status}
-          </span>
+          <div class="flex flex-col gap-1">
+            ${item.deliverables.map(d => `
+              <a href="${d.path}" target="_blank" download class="text-[11px] text-gray-300 hover:text-emerald-400 flex items-center gap-1">
+                <span>📄</span>
+                <span class="truncate max-w-[160px]">${d.name}</span>
+              </a>
+            `).join('')}
+          </div>
         </td>
         <td class="p-4 text-right">
-          <div class="flex items-center justify-end gap-2">
-            <button onclick="window.app.openDocumentPreview('${item.id}')" class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20" title="Preview Paper">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-              </svg>
-            </button>
-            <button onclick="window.app.downloadAssignmentPdf('${item.id}')" class="p-1.5 rounded-lg bg-white/5 text-gray-400 hover:text-white hover:bg-white/10" title="Download Document">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-              </svg>
-            </button>
-          </div>
+          <button onclick="window.app.openPreview('${item.id}')" class="px-3 py-1.5 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-sans font-semibold text-xs">
+            View
+          </button>
         </td>
       </tr>
     `).join('');
   }
 
-  bindCardEventListeners(container) {
-    container.querySelectorAll('[data-action="preview"]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const id = e.currentTarget.getAttribute('data-id');
-        this.openDocumentPreview(id);
-      });
-    });
-
-    container.querySelectorAll('[data-action="download"]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const id = e.currentTarget.getAttribute('data-id');
-        this.downloadAssignmentPdf(id);
-      });
-    });
-
-    container.querySelectorAll('[data-action="toggle-feedback"]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const id = e.currentTarget.getAttribute('data-id');
-        const panel = document.getElementById(`feedback-panel-${id}`);
-        const chevron = container.querySelector(`.feedback-chevron-${id}`);
-        if (panel) {
-          panel.classList.toggle('hidden');
-          chevron?.classList.toggle('rotate-180');
-        }
-      });
-    });
-  }
-
-  filterByTag(tag) {
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) {
-      searchInput.value = tag.replace('#', '');
-      this.searchQuery = searchInput.value.toLowerCase();
-      this.renderAssignments();
-    }
-  }
-
-  resetFilters() {
-    this.currentCategory = 'All';
-    this.currentStatus = 'All';
-    this.searchQuery = '';
-    const searchInput = document.getElementById('search-input');
-    if (searchInput) searchInput.value = '';
-    const statusSelect = document.getElementById('filter-status-select');
-    if (statusSelect) statusSelect.value = 'All';
-    this.setCategory('All');
-  }
-
-  openDocumentPreview(id) {
+  openPreview(id) {
     const item = this.assignments.find(a => a.id === id);
     if (!item) return;
 
-    this.activeModalAssignment = item;
-    const modal = document.getElementById('document-preview-modal');
-    const content = document.getElementById('doc-preview-body');
-
+    const modal = document.getElementById('preview-modal');
+    const content = document.getElementById('preview-modal-body');
     if (!modal || !content) return;
 
     content.innerHTML = `
-      <!-- Paper Header Banner -->
-      <div class="border-b border-white/10 pb-6 mb-6">
-        <div class="flex items-center justify-between gap-4 mb-3 flex-wrap">
+      <div class="border-b border-white/10 pb-5 mb-5">
+        <div class="flex items-center justify-between gap-3 mb-2 flex-wrap">
           <div class="flex items-center gap-2">
-            <span class="font-mono-code text-xs px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-bold">
+            <span class="font-mono text-xs px-2.5 py-1 rounded bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 font-bold">
               ${item.id}
             </span>
-            <span class="text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-gray-300">
-              ${item.category}
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-white/5 text-gray-400">
+              ${item.code}
             </span>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-mono-code text-gray-400">Published: ${item.formattedDate}</span>
-            <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
-              Score: ${item.score}/10 (${item.grade})
-            </span>
-          </div>
+          <span class="text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-emerald-300 font-medium">
+            ${item.category}
+          </span>
         </div>
-
-        <h1 class="text-2xl font-bold text-white mb-3 font-display leading-tight">
+        
+        <h2 class="text-xl sm:text-2xl font-bold text-white font-display mb-2">
           ${item.title}
-        </h1>
+        </h2>
 
-        <div class="text-xs text-gray-400 font-mono-code space-y-1">
-          <p><span class="text-emerald-400">Author:</span> Aarav S. Mehta (Student ID: 2024-ENV-8842)</p>
-          <p><span class="text-cyan-400">Institutional Affiliation:</span> ${item.paperContent?.institution || 'E-Waste Management & Circular Systems Consortium'}</p>
-          <p><span class="text-amber-400">Integrity Verification:</span> ${item.plagiarismRate}</p>
+        <div class="text-xs font-mono text-gray-400 flex items-center gap-3">
+          <span>Author: <strong class="text-emerald-400 font-semibold">${item.author}</strong></span>
+          <span>•</span>
+          <span>Class: <strong class="text-white">Computer Engineering, CMPN-A</strong></span>
         </div>
       </div>
 
-      <!-- Executive Abstract Box -->
-      <div class="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/20 mb-6">
-        <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2 font-display flex items-center gap-1.5">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          Executive Abstract
-        </h4>
-        <p class="text-gray-200 text-sm leading-relaxed">
-          ${item.abstract}
-        </p>
-        <div class="mt-3 pt-2 border-t border-emerald-500/10 text-xs text-gray-400 font-mono-code">
-          <span class="text-emerald-300 font-semibold">Keywords:</span> ${item.paperContent?.keywords || item.tags.join(', ')}
+      <div class="space-y-5 text-xs text-gray-300 leading-relaxed mb-6">
+        <div class="bg-black/30 p-4 rounded-xl border border-white/5">
+          <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2 font-mono">Executive Abstract & Scope</h4>
+          <p class="text-sm text-gray-200">${item.summary}</p>
         </div>
-      </div>
 
-      <!-- Paper Sections -->
-      <div class="space-y-6 text-gray-300 text-sm leading-relaxed">
-        ${(item.paperContent?.sections || [
-          { heading: "1. Introduction & Methodology", text: item.abstract },
-          { heading: "2. Experimental Analysis & Findings", text: "Laboratory data and systematic life cycle metrics support significant environmental remediation advantages." }
-        ]).map(sec => `
-          <div>
-            <h3 class="text-lg font-bold text-white mb-2 font-display text-emerald-200">${sec.heading}</h3>
-            <p class="text-gray-300 leading-relaxed">${sec.text}</p>
-          </div>
-        `).join('')}
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-2 font-mono">Key Deliverable Takeaways</h4>
+          <ul class="space-y-1.5 list-disc list-inside">
+            ${item.keyTakeaways.map(t => `<li class="text-gray-300 text-xs">${t}</li>`).join('')}
+          </ul>
+        </div>
 
-        <!-- Supplementary Data Table / Metric Preview -->
-        <div class="p-4 rounded-xl bg-black/40 border border-white/10 my-6">
-          <h4 class="text-xs font-bold text-gray-300 uppercase tracking-wider mb-3 font-mono-code">
-            Laboratory Analytical Matrix • Summary Breakdown
-          </h4>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs font-mono-code">
-              <thead>
-                <tr class="border-b border-white/10 text-gray-400">
-                  <th class="pb-2">Material / Fraction</th>
-                  <th class="pb-2">Initial Concentration</th>
-                  <th class="pb-2">Extraction Yield (%)</th>
-                  <th class="pb-2">Environmental Factor</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-white/5 text-gray-300">
-                <tr>
-                  <td class="py-2 text-white font-semibold">Gold (Au)</td>
-                  <td class="py-2">240 g/t</td>
-                  <td class="py-2 text-emerald-400 font-bold">91.4%</td>
-                  <td class="py-2 text-cyan-300">0.08 kg CO2 eq/g</td>
-                </tr>
-                <tr>
-                  <td class="py-2 text-white font-semibold">Copper (Cu)</td>
-                  <td class="py-2">132 kg/t</td>
-                  <td class="py-2 text-emerald-400 font-bold">96.8%</td>
-                  <td class="py-2 text-cyan-300">1.2 kg CO2 eq/kg</td>
-                </tr>
-                <tr>
-                  <td class="py-2 text-white font-semibold">Palladium (Pd)</td>
-                  <td class="py-2">48 g/t</td>
-                  <td class="py-2 text-emerald-400 font-bold">88.2%</td>
-                  <td class="py-2 text-cyan-300">0.14 kg CO2 eq/g</td>
-                </tr>
-              </tbody>
-            </table>
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3 font-mono">Actual Files & Deliverables in Repository</h4>
+          <div class="space-y-2">
+            ${item.deliverables.map(d => `
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/10 flex items-center justify-between gap-3 flex-wrap">
+                <div class="flex items-center gap-2.5">
+                  <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="text-sm font-semibold text-white block">${d.name}</span>
+                    <span class="text-[11px] font-mono text-gray-500">${d.type} • ${d.size}</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <a 
+                    href="${d.path}" 
+                    target="_blank" 
+                    class="px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-300 text-xs font-semibold flex items-center gap-1.5 transition-colors"
+                  >
+                    <span>Open in Browser</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                  <a 
+                    href="${d.path}" 
+                    download 
+                    class="px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-semibold flex items-center gap-1.5 transition-colors"
+                  >
+                    <span>Download</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            `).join('')}
           </div>
         </div>
-      </div>
 
-      <!-- Official Assessor Signature & Rubric Footer -->
-      <div class="mt-8 pt-6 border-t border-white/10 bg-white/[0.02] p-5 rounded-xl border border-white/5">
-        <div class="flex items-center justify-between flex-wrap gap-4 mb-3">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center border border-emerald-500/30">
-              ${item.feedback.evaluatorAvatar}
-            </div>
+        ${item.liveAppUrl ? `
+          <div class="p-4 rounded-xl bg-sky-950/20 border border-sky-500/30 flex items-center justify-between gap-4 flex-wrap">
             <div>
-              <div class="text-sm font-bold text-white">${item.feedback.evaluator}</div>
-              <div class="text-xs text-gray-400">${item.feedback.evaluatorTitle}</div>
+              <span class="text-xs font-bold text-sky-400 block font-mono">Linked Live Application:</span>
+              <span class="text-xs text-gray-300">${item.liveAppUrl}</span>
             </div>
+            <a 
+              href="${item.liveAppUrl}" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-black text-xs font-bold transition-all shadow-md"
+            >
+              Launch Live App →
+            </a>
           </div>
-          <div class="text-right">
-            <span class="text-emerald-400 font-mono-code font-bold text-lg">${item.score} / 10</span>
-            <span class="text-xs text-gray-400 block">${item.feedback.timestamp}</span>
-          </div>
-        </div>
-
-        <p class="text-xs text-gray-300 italic mb-4 bg-black/30 p-3 rounded-lg border border-white/5">
-          "${item.feedback.remarks}"
-        </p>
-
-        <div class="flex items-center justify-between text-[11px] font-mono-code text-gray-500">
-          <span>Security Ledger: Verified Digital Audit</span>
-          <span class="text-emerald-400">${item.feedback.signature}</span>
-        </div>
+        ` : ''}
       </div>
     `;
 
     modal.showModal();
   }
-
-  downloadAssignmentPdf(id) {
-    const item = this.assignments.find(a => a.id === id);
-    if (!item) return;
-
-    // Generate a downloadable text/markdown dossier that opens and downloads cleanly
-    const content = `========================================================================
-E-CYCLE HUB // ACADEMIC EVALUATION DOSSIER
-Course: E-Waste Management & Circular Economy (EWM-502)
-Student: Aarav S. Mehta (ID: 2024-ENV-8842)
-Assessor: ${item.feedback.evaluator} (${item.feedback.evaluatorTitle})
-========================================================================
-
-ASSIGNMENT IDENTIFIER: ${item.id}
-CATEGORY: ${item.category}
-SUBMISSION DATE: ${item.formattedDate}
-GRADE AWARDED: ${item.score}/10 (${item.grade})
-STATUS: ${item.status}
-
-TITLE:
-${item.title}
-
-EXECUTIVE ABSTRACT:
-${item.abstract}
-
-KEYWORDS & FOCUS AREAS:
-${item.tags.join(', ')}
-
-EQUIVALENT E-WASTE DIVERTED / ANALYZED:
-${item.divertedWasteKg > 0 ? item.divertedWasteKg + ' kg' : 'Statutory & Policy Analysis Framework'}
-
-PLAGIARISM & INTEGRITY CHECK:
-${item.plagiarismRate}
-
-FILE METADATA:
-File Name: ${item.fileMeta.name}
-File Size: ${item.fileMeta.size}
-Checksum: ${item.fileMeta.checksum}
-
-EVALUATOR REMARKS & RUBRIC ASSESSMENT:
-"${item.feedback.remarks}"
-
-RUBRIC BREAKDOWN:
-- Technical Methodology: ${item.feedback.rubric.methodology}/25
-- Literature & Data Analysis: ${item.feedback.rubric.analysis}/25
-- Environmental & Policy Context: ${item.feedback.rubric.environmental}/25
-- Academic Writing & Documentation: ${item.feedback.rubric.documentation}/20
-TOTAL COMPOSITE SCORE: ${item.feedback.rubric.total}/100
-
-OFFICIAL DIGITAL SIGNATURE:
-${item.feedback.signature}
-========================================================================
-Generated on: ${new Date().toISOString()} via E-Cycle Hub Platform.
-`;
-
-    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `${item.id}_${item.title.substring(0, 25).replace(/[^a-zA-Z0-9]/g, '_')}_Dossier.txt`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  }
-
-  handleUploadSubmit(e) {
-    const title = document.getElementById('upload-title')?.value.trim();
-    const category = document.getElementById('upload-category')?.value;
-    const abstract = document.getElementById('upload-abstract')?.value.trim();
-    const tagsInput = document.getElementById('upload-tags')?.value.trim();
-    const wasteInput = parseFloat(document.getElementById('upload-waste')?.value || "0");
-    const fileInput = document.getElementById('file-input');
-
-    if (!title || !abstract) {
-      alert('Please fill out the Assignment Title and Abstract.');
-      return;
-    }
-
-    const modal = document.getElementById('upload-modal');
-    const submitBtn = document.getElementById('btn-submit-upload');
-    const progressContainer = document.getElementById('upload-progress-container');
-    const progressFill = document.getElementById('upload-progress-fill');
-    const progressStatus = document.getElementById('upload-progress-status');
-
-    if (progressContainer && progressFill && progressStatus) {
-      progressContainer.classList.remove('hidden');
-      if (submitBtn) submitBtn.disabled = true;
-
-      // Simulated stages of academic submission pipeline
-      progressFill.style.width = '25%';
-      progressStatus.textContent = 'Encrypting document and computing SHA-256 hash...';
-
-      setTimeout(() => {
-        progressFill.style.width = '65%';
-        progressStatus.textContent = 'Running automated academic plagiarism check...';
-
-        setTimeout(() => {
-          progressFill.style.width = '100%';
-          progressStatus.textContent = 'Submitting to Professor Elena Vance review queue...';
-
-          setTimeout(() => {
-            // Generate unique assignment code
-            const count = this.assignments.length + 1;
-            const prefix = category === 'Lab Work' ? 'EWM-LAB' :
-                           category === 'Research Papers' ? 'EWM-RES' :
-                           category === 'Case Studies' ? 'EWM-CS' : 'EWM-PRES';
-            const newId = `${prefix}-0${count}`;
-
-            // Process tags
-            const tags = tagsInput ? tagsInput.split(',').map(t => {
-              const clean = t.trim();
-              return clean.startsWith('#') ? clean : `#${clean}`;
-            }) : ['#EWM502', '#CircularEconomy'];
-
-            const fileName = fileInput?.files?.[0]?.name || `${newId}_Submission.pdf`;
-            const fileSize = fileInput?.files?.[0] ? `${(fileInput.files[0].size / (1024 * 1024)).toFixed(1)} MB` : '3.8 MB';
-
-            const newAssignment = {
-              id: newId,
-              title: title,
-              category: category || "Lab Work",
-              submissionDate: new Date().toISOString().split('T')[0],
-              formattedDate: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-              score: 9.1,
-              grade: "Pending",
-              status: "Under Review",
-              abstract: abstract,
-              tags: tags,
-              divertedWasteKg: wasteInput || 15.0,
-              plagiarismRate: "< 1.5% (Pre-Check Cleared)",
-              fileMeta: {
-                name: fileName,
-                size: fileSize,
-                format: fileName.endsWith('.pptx') ? 'PPTX' : 'PDF',
-                pages: 14,
-                checksum: `SHA256: ${Math.random().toString(36).substring(2, 10)}...2026`
-              },
-              secondaryLinks: [
-                { label: "Submitted Artifact", type: "document", icon: "file-text" }
-              ],
-              feedback: {
-                evaluator: "Prof. Dr. Elena Vance",
-                evaluatorTitle: "Lead Assessor & Chair of Circular Metallurgy",
-                evaluatorAvatar: "EV",
-                timestamp: "Just now",
-                remarks: "Assignment successfully queued for academic peer evaluation and grading. Rubric will be finalized following oral session.",
-                rubric: {
-                  methodology: 23.0,
-                  analysis: 23.0,
-                  environmental: 23.0,
-                  documentation: 18.0,
-                  total: 87.0
-                },
-                signature: "Status: Awaiting Evaluator Rubric Finalization"
-              },
-              paperContent: {
-                institution: "Department of Environmental & Materials Engineering",
-                keywords: tags.join(', '),
-                sections: [
-                  { heading: "1. Abstract & Scope", text: abstract }
-                ]
-              }
-            };
-
-            this.assignments.unshift(newAssignment);
-            this.saveAssignments();
-            this.render();
-
-            // Reset modal form
-            e.target.reset();
-            progressContainer.classList.add('hidden');
-            progressFill.style.width = '0%';
-            if (submitBtn) submitBtn.disabled = false;
-            modal.close();
-
-            // Notify user
-            this.showNotification(`Assignment ${newId} submitted successfully to Prof. Vance's portal!`);
-          }, 600);
-        }, 600);
-      }, 600);
-    }
-  }
-
-  openEditGradeModal(id) {
-    const item = this.assignments.find(a => a.id === id);
-    if (!item) return;
-
-    const newScore = prompt(`Enter new score for ${item.id} (Current: ${item.score}/10):`, item.score);
-    if (newScore !== null && !isNaN(parseFloat(newScore))) {
-      item.score = parseFloat(newScore);
-      item.status = "Evaluated";
-      item.grade = item.score >= 9.5 ? "A+" : item.score >= 9.0 ? "A" : item.score >= 8.5 ? "B+" : "B";
-      
-      const newRemarks = prompt("Update Evaluator Remarks:", item.feedback.remarks);
-      if (newRemarks) {
-        item.feedback.remarks = newRemarks;
-        item.feedback.timestamp = "Updated by Professor Vance • Just now";
-      }
-
-      this.saveAssignments();
-      this.render();
-      this.showNotification(`Assessor grade for ${item.id} updated to ${item.score}/10 (${item.grade})`);
-    }
-  }
-
-  showNotification(message) {
-    const toast = document.createElement('div');
-    toast.className = 'fixed bottom-6 right-6 z-50 glass-panel px-5 py-3.5 rounded-xl border border-emerald-500/50 text-white text-xs font-semibold shadow-2xl flex items-center gap-3 animate-bounce';
-    toast.innerHTML = `
-      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 live-pulse"></span>
-      <span>${message}</span>
-    `;
-    document.body.appendChild(toast);
-    setTimeout(() => {
-      toast.remove();
-    }, 4000);
-  }
-
-  calculateMaterialImpact() {
-    const laptops = parseInt(document.getElementById('calc-laptops')?.value || 0, 10);
-    const phones = parseInt(document.getElementById('calc-phones')?.value || 0, 10);
-    const servers = parseInt(document.getElementById('calc-servers')?.value || 0, 10);
-
-    // Standard recovery metrics per unit
-    // Laptop: 2.2 kg e-waste, 0.2g Gold, 150g Copper, 0.05g Palladium, 18 kg CO2 saved
-    // Phone: 0.18 kg e-waste, 0.03g Gold, 16g Copper, 0.015g Palladium, 2.8 kg CO2 saved
-    // Server: 15.0 kg e-waste, 1.8g Gold, 1200g Copper, 0.4g Palladium, 140 kg CO2 saved
-
-    const totalWeight = (laptops * 2.2) + (phones * 0.18) + (servers * 15.0);
-    const goldGrams = (laptops * 0.2) + (phones * 0.03) + (servers * 1.8);
-    const copperKg = ((laptops * 150) + (phones * 16) + (servers * 1200)) / 1000;
-    const co2SavedKg = (laptops * 18) + (phones * 2.8) + (servers * 140);
-
-    const outWeight = document.getElementById('impact-total-weight');
-    const outGold = document.getElementById('impact-gold');
-    const outCopper = document.getElementById('impact-copper');
-    const outCo2 = document.getElementById('impact-co2');
-
-    if (outWeight) outWeight.textContent = `${totalWeight.toFixed(1)} kg`;
-    if (outGold) outGold.textContent = `${goldGrams.toFixed(2)} g`;
-    if (outCopper) outCopper.textContent = `${copperKg.toFixed(2)} kg`;
-    if (outCo2) outCo2.textContent = `${co2SavedKg.toFixed(0)} kg CO₂e`;
-  }
 }
 
-// Global initialization
+// Global bootstrap
 document.addEventListener('DOMContentLoaded', () => {
-  window.app = new DashboardApp();
+  window.app = new PortfolioApp();
 });
-

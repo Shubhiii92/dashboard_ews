@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Cycle Hub | E-Waste Management Academic Portfolio & Evaluator Portal</title>
-  <meta name="description" content="Academic portfolio and evaluation dashboard for university course E-Waste Management & Circular Economy (EWM-502). Review laboratory reports, research papers, and case studies.">
+  <title>MY WORK — Academic Portfolio & Project Repository | Shubham Patel (24102A0051)</title>
+  <meta name="description" content="Academic Portfolio and Coursework Deliverables Repository of Shubham Patel, Roll Number: 24102A0051, Computer Engineering CMPN-A, Vidyalankar Institute of Technology, Mumbai.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310b981' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'/></svg>">
-  
+
   <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,9 +53,8 @@
       <!-- Brand Logo & Title -->
       <div class="flex items-center gap-3.5">
         <div class="relative w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500/20 to-sky-500/20 border border-emerald-500/40 flex items-center justify-center p-2 shadow-inner">
-          <!-- Animated E-Waste Loop Circuit SVG Icon -->
           <svg class="w-6 h-6 text-emerald-400 live-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
           </svg>
           <div class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
         </div>
@@ -63,14 +62,14 @@
         <div>
           <div class="flex items-center gap-2">
             <span class="text-xl font-extrabold tracking-tight text-white font-display">
-              E-CYCLE <span class="text-emerald-400 glow-text-green">HUB</span>
+              MY <span class="text-emerald-400 glow-text-green">WORK</span>
             </span>
             <span class="hidden sm:inline-block font-mono text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
-              CircuitCycle v2.4
+              Academic Repository
             </span>
           </div>
           <p class="text-xs text-gray-400 hidden sm:block truncate">
-            E-Waste Management & Circular Economy Portfolio • Course EWM-502
+            Academic Portfolio & Project Repository • Shubham Patel (24102A0051)
           </p>
         </div>
       </div>
@@ -86,9 +85,9 @@
           <input 
             type="text" 
             id="search-input" 
-            placeholder="Search assignments, topics, metals, tags (e.g. #Hydrometallurgy, Gold)..." 
+            placeholder="Search assignments, topics, deliverables, tags (e.g. #SDG, IEEE, EPR)..." 
             class="w-full pl-10 pr-12 py-2 text-xs rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-emerald-500 focus:bg-white/10 transition-all font-sans"
-            aria-label="Search assignments"
+            aria-label="Search assignments and projects"
           >
           <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
             <kbd class="px-1.5 py-0.5 text-[10px] font-mono text-gray-400 bg-black/40 rounded border border-white/10">⌘K</kbd>
@@ -96,35 +95,25 @@
         </div>
       </div>
 
-      <!-- System Clock, Evaluator Toggle & Action Buttons -->
+      <!-- Header Right Badges -->
       <div class="flex items-center gap-3">
-        <!-- Live System Date/Time Pill -->
-        <div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-black/30 border border-white/10 text-[11px] font-mono text-gray-400">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 live-pulse"></span>
-          <span id="live-system-clock">Syncing...</span>
-        </div>
-
-        <!-- Evaluator Mode Switch -->
-        <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
-          <label for="evaluator-mode-toggle" class="text-[11px] font-medium text-gray-300 cursor-pointer flex items-center gap-1.5">
-            <span class="text-xs">🎓</span> Evaluator Mode
-          </label>
-          <input 
-            type="checkbox" 
-            id="evaluator-mode-toggle" 
-            class="w-4 h-4 rounded text-emerald-500 focus:ring-emerald-500 focus:ring-offset-gray-900 bg-gray-800 border-gray-600 cursor-pointer"
-          >
-        </div>
-
-        <!-- Submit Assignment Button -->
-        <button 
-          id="btn-open-upload"
-          class="relative inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-semibold rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black shadow-lg shadow-emerald-500/20 transition-all font-sans"
+        <a 
+          href="https://github.com/Shubhiii92" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-gray-200 transition-colors"
         >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+          <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
           </svg>
-          <span>Submit Work</span>
+          <span>GitHub: Shubhiii92</span>
+        </a>
+
+        <button 
+          id="btn-print-portfolio" 
+          class="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-bold transition-all shadow-lg shadow-emerald-500/20"
+        >
+          Print Portfolio
         </button>
       </div>
     </div>
@@ -147,25 +136,10 @@
     </div>
   </header>
 
-  <!-- Evaluator Mode Indicator Banner (hidden by default) -->
-  <div id="evaluator-mode-banner" class="hidden bg-emerald-950/80 border-b border-emerald-500/40 px-4 py-2.5 text-xs text-emerald-300">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-      <div class="flex items-center gap-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 live-pulse"></span>
-        <span class="font-bold">EVALUATOR PORTAL ACTIVE:</span>
-        <span>You are evaluating as <strong>Prof. Dr. Elena Vance</strong>. You can modify rubric grades, update remarks, and sign off on submissions directly on each assignment card.</span>
-      </div>
-      <button onclick="document.getElementById('evaluator-mode-toggle').checked = false; window.app.isEvaluatorMode = false; document.getElementById('evaluator-mode-banner').classList.add('hidden'); window.app.renderAssignments();" class="text-xs text-white underline hover:text-emerald-200">
-        Exit Evaluator View
-      </button>
-    </div>
-  </div>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-
-    <!-- Section 1: Student & Course Meta Card (Profile Banner) -->
+    <!-- Profile Banner: Shubham Patel (24102A0051) -->
     <section class="glass-panel rounded-3xl p-6 sm:p-8 relative overflow-hidden border border-white/10 shadow-2xl">
-      <!-- Decorative circuit accent lines -->
       <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute bottom-0 left-0 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -173,372 +147,182 @@
         
         <!-- Left: Student Info & Course Details -->
         <div class="flex items-start gap-4 sm:gap-5">
-          <!-- Student Avatar with Cyber-Ring -->
           <div class="relative shrink-0">
             <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-emerald-400 to-sky-500 p-0.5 shadow-xl">
               <div class="w-full h-full bg-[#121820] rounded-[14px] flex items-center justify-center text-emerald-400 font-bold font-display text-xl sm:text-2xl">
-                AM
+                SP
               </div>
             </div>
             <div class="absolute -bottom-1 -right-1 px-1.5 py-0.5 bg-emerald-500 text-black text-[9px] font-mono font-bold rounded-md">
-              HONORS
+              CMPN-A
             </div>
           </div>
 
-          <!-- Academic Bio & Degree -->
           <div class="space-y-1.5">
             <div class="flex items-center gap-2.5 flex-wrap">
               <h1 class="text-2xl sm:text-3xl font-extrabold text-white font-display tracking-tight">
-                Aarav S. Mehta
+                Shubham Patel
               </h1>
               <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-emerald-300 font-semibold">
-                ID: 2024-ENV-8842
+                Roll Number: 24102A0051
               </span>
-              <span class="font-mono text-xs px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-gray-400">
-                Roll: EWM-24-039
+              <span class="font-mono text-xs px-2 py-0.5 rounded-md bg-sky-500/10 border border-sky-500/30 text-sky-300 font-semibold">
+                CMPN-A
               </span>
             </div>
 
-            <p class="text-sm font-medium text-gray-300">
-              B.Tech Environmental & Electronic Engineering • Semester V
+            <p class="text-sm font-semibold text-gray-200">
+              Department of Computer Engineering • Class CMPN-A
             </p>
 
             <div class="flex items-center gap-2 text-xs text-gray-400 flex-wrap">
-              <span class="text-emerald-400 font-semibold">Course:</span>
-              <span>E-Waste Management & Circular Economy (EWM-502)</span>
+              <span class="text-emerald-400 font-semibold">Institution:</span>
+              <span>Vidyalankar Institute of Technology, Mumbai</span>
               <span>•</span>
-              <span class="text-gray-400">Dept. of Sustainable Electronics & Metallurgy</span>
+              <span class="text-gray-300">Academic Portfolio & Coursework Repository</span>
             </div>
 
-            <!-- Assessor Tag -->
-            <div class="pt-2 flex items-center gap-2 text-xs">
+            <div class="pt-2 flex items-center gap-2 text-xs flex-wrap">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>Curriculum Complete: <strong>11 Assignments (00–10)</strong> Delivered</span>
+              </span>
               <span class="px-2.5 py-1 rounded-lg bg-sky-500/10 border border-sky-500/30 text-sky-300 flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                 </svg>
-                <span>Lead Evaluator: <strong>Prof. Dr. Elena Vance</strong> (Assessor Portal)</span>
+                <span><strong>4 Live Deployed Applications</strong></span>
               </span>
             </div>
           </div>
         </div>
 
-        <!-- Right: Fast Actions & Portfolio Download -->
+        <!-- Right: Fast Actions -->
         <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto">
-          <button 
-            id="btn-print-portfolio" 
+          <a 
+            href="assignments/IEEE_Agent_Capability_Scanner_Paper_FINAL.pdf" 
+            target="_blank" 
             class="flex-1 sm:flex-none px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-gray-200 text-xs font-semibold flex items-center justify-center gap-2 transition-all"
           >
             <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
             </svg>
-            <span>Print Academic Dossier</span>
-          </button>
-
-          <button 
-            id="btn-reset-data" 
-            class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-red-500/10 border border-white/10 hover:border-red-500/30 text-gray-400 hover:text-red-400 text-xs font-medium transition-all"
-            title="Reset data back to initial default course seed"
-          >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-            </svg>
-          </button>
+            <span>View Published IEEE Paper</span>
+          </a>
         </div>
       </div>
 
       <!-- Quick Summary Stat Badges Row -->
       <div class="mt-6 pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
         <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
-          <span class="text-gray-400 block text-[11px] font-sans">Modules Submitted</span>
-          <span id="banner-badge-submitted" class="text-white font-bold text-sm">6 / 6 Core Modules</span>
+          <span class="text-gray-400 block text-[11px] font-sans">Total Assignments</span>
+          <span id="count-total-assignments" class="text-white font-bold text-sm">11 (Numbered 00–10)</span>
         </div>
         <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
-          <span class="text-gray-400 block text-[11px] font-sans">Current Course GPA</span>
-          <span class="text-emerald-400 font-bold text-sm">9.4 / 10 (Grade: A+)</span>
+          <span class="text-gray-400 block text-[11px] font-sans">Live Deployed Apps</span>
+          <span id="count-total-apps" class="text-emerald-400 font-bold text-sm">4 Production Applications</span>
         </div>
         <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
-          <span class="text-gray-400 block text-[11px] font-sans">Material Recovered / Analyzed</span>
-          <span id="banner-badge-waste" class="text-cyan-300 font-bold text-sm">142.8 kg e-Waste</span>
+          <span class="text-gray-400 block text-[11px] font-sans">Deliverable Formats</span>
+          <span class="text-cyan-300 font-bold text-sm">PDF, DOCX, XLSX, MP4, PPTX</span>
         </div>
         <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5">
-          <span class="text-gray-400 block text-[11px] font-sans">Integrity & Plagiarism</span>
-          <span class="text-emerald-400 font-bold text-sm">✓ Cleared (< 2.5%)</span>
+          <span class="text-gray-400 block text-[11px] font-sans">Published Research</span>
+          <span class="text-emerald-400 font-bold text-sm">IEEE Static Agent Scanner</span>
         </div>
       </div>
     </section>
 
-    <!-- Section 2: Metric Overview Cards (KPIs) -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      
-      <!-- KPI 1: Completion Progress Ring -->
-      <div class="glass-card rounded-2xl p-5 relative overflow-hidden flex items-center justify-between">
-        <div>
-          <span class="text-xs font-medium text-gray-400 block mb-1">Course Curriculum</span>
-          <div class="text-2xl font-extrabold text-white font-display mb-1">
-            100% Cleared
-          </div>
-          <span class="text-[11px] text-emerald-400 font-mono">6 of 6 Core Modules</span>
-        </div>
-
-        <div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
-          <svg class="w-16 h-16 transform -rotate-90">
-            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="5" class="text-white/10" fill="transparent" />
-            <circle 
-              id="kpi-progress-circle"
-              cx="32" 
-              cy="32" 
-              r="28" 
-              stroke="currentColor" 
-              stroke-width="5" 
-              stroke-linecap="round"
-              class="text-emerald-400 progress-ring-circle" 
-              fill="transparent" 
-              stroke-dasharray="175.9" 
-              stroke-dashoffset="0"
-            />
-          </svg>
-          <span id="kpi-progress-text" class="absolute text-xs font-bold text-white font-mono">100%</span>
-        </div>
-      </div>
-
-      <!-- KPI 2: Submissions Logged -->
-      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-medium text-gray-400">Total Artifacts</span>
-          <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-400">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path>
-            </svg>
-          </span>
-        </div>
-        <div id="kpi-total-submissions" class="text-2xl font-extrabold text-white font-display mb-1">
-          6
-        </div>
-        <div class="text-[11px] text-gray-400 font-mono">
-          3 Reports • 2 Slide Decks • 1 Model
-        </div>
-      </div>
-
-      <!-- KPI 3: Key Focus Areas -->
-      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-medium text-gray-400">Core Focus Pillars</span>
-          <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
-            </svg>
-          </span>
-        </div>
-        <div class="text-xl font-bold text-white font-display mb-1 flex items-center justify-between">
-          <span>6 Pillars</span>
-          <span id="kpi-waste-diverted" class="text-xs font-mono text-cyan-300 font-normal">142.8 kg e-Waste</span>
-        </div>
-        <div class="text-[11px] text-emerald-400 font-mono truncate">
-          Hydrometallurgy • EPR • WEEE • Li-Ion
-        </div>
-      </div>
-
-      <!-- KPI 4: Evaluation Status -->
-      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-medium text-gray-400">Evaluation Status</span>
-          <span class="p-1.5 rounded-lg bg-amber-500/10 text-amber-400">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-            </svg>
-          </span>
-        </div>
-        <div id="kpi-avg-score" class="text-2xl font-extrabold text-white font-display mb-1">
-          9.4 / 10
-        </div>
-        <div id="kpi-review-status" class="text-[11px] text-emerald-400 font-mono">
-          5 Verified • 1 In Queue
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Section 3: Interactive Circular Impact Matrix Widget (E-Waste Calculator) -->
-    <section class="glass-panel rounded-2xl p-6 border border-white/10 relative overflow-hidden">
-      <div class="flex items-center justify-between flex-wrap gap-4 mb-5">
+    <!-- SECTION 1: FOUR LIVE APPLICATIONS -->
+    <section class="space-y-4">
+      <div class="flex items-center justify-between gap-4 flex-wrap">
         <div>
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 live-pulse"></span>
-            <h2 class="text-lg font-bold text-white font-display">
-              Circular Economy & Precious Metal Recovery Matrix
+            <h2 class="text-xl font-bold text-white font-display">
+              Four Live Applications
             </h2>
           </div>
-          <p class="text-xs text-gray-400 mt-1">
-            Simulate tangible urban mining recovery yield based on the hydrometallurgical models developed in this portfolio.
+          <p class="text-xs text-gray-400 mt-0.5">
+            Interactive web applications, calculators, simulation models, and game prototypes.
           </p>
         </div>
-
-        <div class="flex items-center gap-2 text-xs font-mono text-emerald-400 bg-emerald-500/10 px-3 py-1.5 rounded-xl border border-emerald-500/30">
-          <span>Formula: Shrinking Core Leaching Yield</span>
-        </div>
+        <span class="font-mono text-xs px-3 py-1 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+          4 Live Apps Deployed
+        </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <!-- Input 1 -->
-        <div class="p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
-          <label class="text-xs font-medium text-gray-300 block mb-1.5 flex items-center justify-between">
-            <span>Retired Laptops Disassembled</span>
-            <span class="font-mono text-emerald-400 text-xs" id="val-laptops">12 units</span>
-          </label>
-          <input 
-            type="range" 
-            id="calc-laptops" 
-            min="0" 
-            max="100" 
-            value="12" 
-            class="w-full accent-emerald-500 cursor-pointer"
-            oninput="document.getElementById('val-laptops').textContent = this.value + ' units'"
-          >
-        </div>
-
-        <!-- Input 2 -->
-        <div class="p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
-          <label class="text-xs font-medium text-gray-300 block mb-1.5 flex items-center justify-between">
-            <span>Smartphones Repurposed</span>
-            <span class="font-mono text-sky-400 text-xs" id="val-phones">45 units</span>
-          </label>
-          <input 
-            type="range" 
-            id="calc-phones" 
-            min="0" 
-            max="300" 
-            value="45" 
-            class="w-full accent-sky-400 cursor-pointer"
-            oninput="document.getElementById('val-phones').textContent = this.value + ' units'"
-          >
-        </div>
-
-        <!-- Input 3 -->
-        <div class="p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
-          <label class="text-xs font-medium text-gray-300 block mb-1.5 flex items-center justify-between">
-            <span>Server Motherboards Leached</span>
-            <span class="font-mono text-amber-400 text-xs" id="val-servers">6 blades</span>
-          </label>
-          <input 
-            type="range" 
-            id="calc-servers" 
-            min="0" 
-            max="50" 
-            value="6" 
-            class="w-full accent-amber-400 cursor-pointer"
-            oninput="document.getElementById('val-servers').textContent = this.value + ' blades'"
-          >
-        </div>
-      </div>
-
-      <!-- Recovery Output Indicators -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
-        <div class="p-3 rounded-xl bg-black/40 border border-white/5">
-          <span class="text-[10px] text-gray-400 uppercase tracking-wider block mb-1 font-sans">Total E-Waste Diverted</span>
-          <span id="impact-total-weight" class="text-base font-bold text-white">124.5 kg</span>
-        </div>
-        <div class="p-3 rounded-xl bg-black/40 border border-emerald-500/20">
-          <span class="text-[10px] text-emerald-400 uppercase tracking-wider block mb-1 font-sans">Gold (Au) Recovered</span>
-          <span id="impact-gold" class="text-base font-bold text-emerald-400">14.55 g</span>
-        </div>
-        <div class="p-3 rounded-xl bg-black/40 border border-sky-500/20">
-          <span class="text-[10px] text-sky-400 uppercase tracking-wider block mb-1 font-sans">Copper (Cu) Extracted</span>
-          <span id="impact-copper" class="text-base font-bold text-sky-300">9.72 kg</span>
-        </div>
-        <div class="p-3 rounded-xl bg-black/40 border border-amber-500/20">
-          <span class="text-[10px] text-amber-400 uppercase tracking-wider block mb-1 font-sans">CO₂e Emissions Averted</span>
-          <span id="impact-co2" class="text-base font-bold text-amber-300">1,182 kg CO₂e</span>
-        </div>
+      <div id="live-apps-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Rendered by app.js -->
       </div>
     </section>
 
-    <!-- Section 4: Filter & Search Toolbar -->
-    <section id="filter-toolbar" class="space-y-4">
-      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
-        
-        <!-- Category Filter Tabs -->
-        <div class="flex items-center gap-1.5 overflow-x-auto pb-2 lg:pb-0 scrollbar-none">
-          <button 
-            data-category-filter="All" 
-            class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 shrink-0 transition-all flex items-center gap-1.5"
-          >
-            <span>All Submissions</span>
-            <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="All">6</span>
-          </button>
-
-          <button 
-            data-category-filter="Research Papers" 
-            class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
-          >
-            <span>Research Papers</span>
-            <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Research Papers">2</span>
-          </button>
-
-          <button 
-            data-category-filter="Case Studies" 
-            class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
-          >
-            <span>Case Studies</span>
-            <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Case Studies">1</span>
-          </button>
-
-          <button 
-            data-category-filter="Lab Work" 
-            class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
-          >
-            <span>Lab Work</span>
-            <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Lab Work">2</span>
-          </button>
-
-          <button 
-            data-category-filter="Presentations" 
-            class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
-          >
-            <span>Presentations</span>
-            <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Presentations">1</span>
-          </button>
-        </div>
-
-        <!-- Filter Controls (Status, Sort, View Toggle) -->
-        <div class="flex items-center gap-2.5 flex-wrap">
-          <!-- Status Dropdown -->
-          <div class="relative">
-            <select 
-              id="filter-status-select" 
-              class="appearance-none pl-3 pr-8 py-2 rounded-xl text-xs font-medium bg-white/5 border border-white/10 text-gray-300 focus:border-emerald-500 focus:outline-none cursor-pointer"
-            >
-              <option value="All" class="bg-gray-900 text-white">All Statuses</option>
-              <option value="Evaluated" class="bg-gray-900 text-white">Evaluated Only</option>
-              <option value="Under Review" class="bg-gray-900 text-white">Under Review</option>
-              <option value="Pending" class="bg-gray-900 text-white">Pending</option>
-            </select>
-            <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none text-gray-400">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+    <!-- SECTION 2: 11 ASSIGNMENTS (00–10) -->
+    <section class="space-y-6">
+      
+      <!-- Filter & Search Toolbar -->
+      <div class="space-y-4">
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+          
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span>
+              <h2 class="text-xl font-bold text-white font-display">
+                Academic Coursework Assignments
+              </h2>
             </div>
+            <p class="text-xs text-gray-400 mt-0.5">
+              11 Complete Deliverables (Assignments 00 to 10) with verified repository files.
+            </p>
           </div>
 
-          <!-- Sort Dropdown -->
-          <div class="relative">
-            <select 
-              id="sort-select" 
-              class="appearance-none pl-3 pr-8 py-2 rounded-xl text-xs font-medium bg-white/5 border border-white/10 text-gray-300 focus:border-emerald-500 focus:outline-none cursor-pointer"
+          <!-- Category Filter Tabs -->
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-2 lg:pb-0 scrollbar-none">
+            <button 
+              data-category-filter="All" 
+              class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 shrink-0 transition-all flex items-center gap-1.5"
             >
-              <option value="latest" class="bg-gray-900 text-white">Latest First</option>
-              <option value="oldest" class="bg-gray-900 text-white">Oldest First</option>
-              <option value="score" class="bg-gray-900 text-white">Score: High to Low</option>
-              <option value="code" class="bg-gray-900 text-white">Assignment Code</option>
-            </select>
-            <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none text-gray-400">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </div>
+              <span>All Assignments</span>
+              <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="All">11</span>
+            </button>
+
+            <button 
+              data-category-filter="Policy & Regulatory" 
+              class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
+            >
+              <span>Policy & Regulatory</span>
+              <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Policy & Regulatory">3</span>
+            </button>
+
+            <button 
+              data-category-filter="Research & Reports" 
+              class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
+            >
+              <span>Research & Reports</span>
+              <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Research & Reports">4</span>
+            </button>
+
+            <button 
+              data-category-filter="Presentations & Case Studies" 
+              class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
+            >
+              <span>Presentations & Case Studies</span>
+              <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Presentations & Case Studies">2</span>
+            </button>
+
+            <button 
+              data-category-filter="Outreach & Media" 
+              class="px-3.5 py-2 rounded-xl text-xs font-semibold text-gray-400 border border-white/10 hover:border-white/20 shrink-0 transition-all flex items-center gap-1.5"
+            >
+              <span>Outreach & Media</span>
+              <span class="font-mono text-[10px] px-1.5 py-0.2 rounded-full bg-black/40" data-category-count="Outreach & Media">2</span>
+            </button>
           </div>
 
           <!-- View Mode Toggle: Grid vs Table -->
-          <div class="flex items-center p-1 rounded-xl bg-white/5 border border-white/10">
+          <div class="flex items-center p-1 rounded-xl bg-white/5 border border-white/10 self-end lg:self-auto shrink-0">
             <button 
               id="btn-view-grid" 
               class="p-1.5 rounded-lg text-emerald-400 bg-white/10 hover:text-emerald-300 transition-colors"
@@ -558,215 +342,64 @@
               </svg>
             </button>
           </div>
+
         </div>
 
+        <div class="flex items-center justify-between text-xs text-gray-400">
+          <span id="results-count-badge" class="font-mono">Displaying 11 of 11 Coursework Assignments</span>
+          <span class="text-[11px] text-gray-500">All deliverables stored in local repository with verified direct links</span>
+        </div>
       </div>
 
-      <!-- Results Count Status -->
-      <div class="flex items-center justify-between text-xs text-gray-400">
-        <span id="results-count-badge" class="font-mono">Showing 6 of 6 assignments</span>
-        <span class="text-[11px] text-gray-500">Click any card to inspect full methodology & assessor feedback</span>
-      </div>
-    </section>
+      <!-- Assignment Cards Grid View -->
+      <section id="assignment-grid-view" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered by app.js -->
+      </section>
 
-    <!-- Section 5: Assignment Showcase Cards (Grid View) -->
-    <section id="assignment-grid-view" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Dynamically Rendered by app.js -->
-    </section>
+      <!-- Assignment Table View -->
+      <section id="assignment-table-view" class="hidden glass-panel rounded-2xl overflow-hidden border border-white/10">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-white/10 bg-white/[0.03] text-xs font-mono text-gray-400 uppercase tracking-wider">
+                <th class="p-4">Number</th>
+                <th class="p-4">Assignment Topic</th>
+                <th class="p-4">Domain</th>
+                <th class="p-4">Deliverables</th>
+                <th class="p-4 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="assignment-table-body" class="divide-y divide-white/5">
+              <!-- Rendered by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <!-- Section 5B: Academic Table View (Alternative layout) -->
-    <section id="assignment-table-view" class="hidden glass-panel rounded-2xl overflow-hidden border border-white/10">
-      <div class="overflow-x-auto">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="border-b border-white/10 bg-white/[0.03] text-xs font-mono text-gray-400 uppercase tracking-wider">
-              <th class="p-4">Code</th>
-              <th class="p-4">Assignment Topic</th>
-              <th class="p-4">Pillar</th>
-              <th class="p-4">Date</th>
-              <th class="p-4 text-center">Score</th>
-              <th class="p-4">Status</th>
-              <th class="p-4 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody id="assignment-table-body" class="divide-y divide-white/5">
-            <!-- Dynamically Rendered by app.js -->
-          </tbody>
-        </table>
-      </div>
     </section>
 
   </main>
 
-  <!-- Interactive Document Preview Modal -->
-  <dialog id="document-preview-modal" class="p-0 rounded-3xl bg-[#0f141c] text-white border border-white/15 shadow-2xl max-w-3xl w-full mx-auto my-auto backdrop:bg-black/80">
+  <!-- Detail Inspection Modal -->
+  <dialog id="preview-modal" class="p-0 rounded-3xl bg-[#0f141c] text-white border border-white/15 shadow-2xl max-w-3xl w-full mx-auto my-auto backdrop:bg-black/80">
     <div class="p-6 sm:p-8 max-h-[85vh] overflow-y-auto">
-      <!-- Modal Navigation Bar -->
       <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
         <div class="flex items-center gap-2">
           <span class="w-3 h-3 rounded-full bg-emerald-400 live-pulse"></span>
           <span class="text-xs font-mono font-bold text-gray-300 uppercase tracking-wider">
-            Verified Document Viewer • Academic Ledger
+            Verified Academic Deliverable Inspector
           </span>
         </div>
-        <button id="btn-close-doc-modal" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors" title="Close Preview">
+        <button id="btn-close-modal" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors" title="Close">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
 
-      <!-- Dynamic Preview Body -->
-      <div id="doc-preview-body">
+      <div id="preview-modal-body">
         <!-- Rendered by app.js -->
       </div>
-    </div>
-  </dialog>
-
-  <!-- Interactive Upload & Submission Modal -->
-  <dialog id="upload-modal" class="p-0 rounded-3xl bg-[#0f141c] text-white border border-white/15 shadow-2xl max-w-2xl w-full mx-auto my-auto backdrop:bg-black/80">
-    <div class="p-6 sm:p-8 max-h-[85vh] overflow-y-auto">
-      <!-- Modal Header -->
-      <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
-        <div>
-          <h3 class="text-xl font-bold font-display text-white">
-            Submit New E-Waste Coursework
-          </h3>
-          <p class="text-xs text-gray-400 mt-0.5">
-            Upload assignment artifact for Prof. Dr. Elena Vance's academic evaluation queue.
-          </p>
-        </div>
-        <button id="btn-close-upload" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Upload Form -->
-      <form id="upload-assignment-form" class="space-y-4">
-        <div>
-          <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5 font-mono">
-            Assignment Title <span class="text-emerald-400">*</span>
-          </label>
-          <input 
-            type="text" 
-            id="upload-title" 
-            required 
-            placeholder="e.g. Life Cycle Assessment of Neodymium Magnet Recycling in Wind Turbines" 
-            class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-gray-500 focus:border-emerald-500 focus:outline-none"
-          >
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5 font-mono">
-              Coursework Pillar <span class="text-emerald-400">*</span>
-            </label>
-            <select 
-              id="upload-category" 
-              class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white focus:border-emerald-500 focus:outline-none"
-            >
-              <option value="Lab Work" class="bg-gray-900">Lab Work</option>
-              <option value="Research Papers" class="bg-gray-900">Research Papers</option>
-              <option value="Case Studies" class="bg-gray-900">Case Studies</option>
-              <option value="Presentations" class="bg-gray-900">Presentations & Slides</option>
-            </select>
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5 font-mono">
-              Equivalent Waste Diverted (kg)
-            </label>
-            <input 
-              type="number" 
-              id="upload-waste" 
-              step="0.1" 
-              placeholder="e.g. 15.5" 
-              class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-gray-500 focus:border-emerald-500 focus:outline-none"
-            >
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5 font-mono">
-            Executive Abstract / Summary <span class="text-emerald-400">*</span>
-          </label>
-          <textarea 
-            id="upload-abstract" 
-            rows="3" 
-            required 
-            placeholder="Summarize the core methodology, experimental apparatus, recovery efficiency %, and conclusions..." 
-            class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-gray-500 focus:border-emerald-500 focus:outline-none"
-          ></textarea>
-        </div>
-
-        <div>
-          <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5 font-mono">
-            Keywords & Topic Tags (comma-separated)
-          </label>
-          <input 
-            type="text" 
-            id="upload-tags" 
-            placeholder="#Hydrometallurgy, #RareEarth, #CircularDesign" 
-            class="w-full px-3.5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-gray-500 focus:border-emerald-500 focus:outline-none"
-          >
-        </div>
-
-        <!-- Drag & Drop Upload Zone -->
-        <div>
-          <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5 font-mono">
-            Document Asset (.pdf, .pptx, .docx max 25MB)
-          </label>
-          <div 
-            id="file-drop-zone" 
-            class="border-2 border-dashed border-white/15 rounded-2xl p-6 text-center hover:border-emerald-500/50 hover:bg-emerald-500/5 transition-all cursor-pointer group"
-          >
-            <input type="file" id="file-input" class="hidden" accept=".pdf,.pptx,.docx">
-            <div class="w-12 h-12 mx-auto mb-3 rounded-2xl bg-white/5 group-hover:bg-emerald-500/10 flex items-center justify-center text-gray-400 group-hover:text-emerald-400 transition-colors">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
-              </svg>
-            </div>
-            <p class="text-xs text-gray-300 font-medium">
-              Click to browse or drag and drop report file
-            </p>
-            <p class="text-[11px] text-gray-500 mt-1">
-              Supports IEEE format PDFs, Slide Decks, and LCA Spreadsheets
-            </p>
-            <div id="file-selected-name" class="hidden mt-3 text-xs font-mono text-emerald-400 bg-emerald-500/10 py-1.5 px-3 rounded-lg border border-emerald-500/20 inline-block"></div>
-          </div>
-        </div>
-
-        <!-- Simulated Upload Progress Bar -->
-        <div id="upload-progress-container" class="hidden space-y-2 pt-2">
-          <div class="flex justify-between text-[11px] font-mono text-gray-400">
-            <span id="upload-progress-status">Verifying cryptographic hash...</span>
-            <span class="text-emerald-400">Processing</span>
-          </div>
-          <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden">
-            <div id="upload-progress-fill" class="h-full bg-emerald-400 transition-all duration-300" style="width: 0%"></div>
-          </div>
-        </div>
-
-        <!-- Submit Actions -->
-        <div class="flex items-center justify-end gap-3 pt-4 border-t border-white/10">
-          <button 
-            type="button" 
-            onclick="document.getElementById('upload-modal').close()" 
-            class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-semibold text-gray-300 transition-colors"
-          >
-            Cancel
-          </button>
-          <button 
-            type="submit" 
-            id="btn-submit-upload" 
-            class="px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-bold transition-all shadow-lg shadow-emerald-500/20"
-          >
-            Submit for Academic Grading
-          </button>
-        </div>
-      </form>
     </div>
   </dialog>
 
@@ -775,16 +408,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
       <div class="flex items-center gap-3">
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 live-pulse"></span>
-        <span>E-Cycle Hub Academic Evaluation Framework • EWM-502</span>
+        <span>MY WORK — Academic Portfolio & Project Repository</span>
       </div>
 
       <div class="text-center md:text-right font-mono text-[11px] text-gray-500">
-        <span>Assessed by Prof. Dr. Elena Vance • Certified ISO 14040/44 & WEEE Directive 2012/19/EU Rubrics</span>
+        <span>Shubham Patel (24102A0051) • Computer Engineering, CMPN-A • Vidyalankar Institute of Technology</span>
       </div>
     </div>
   </footer>
 
-  <!-- Main JavaScript Application Engine -->
+  <!-- Main JavaScript Controller -->
   <script src="app.js"></script>
 </body>
 </html>
